@@ -87,7 +87,7 @@ a.axil-btn.btn-bg-secondary:before, button.axil-btn.btn-bg-secondary:before {
 }
 
 .offset-xl-2 {
-    margin-left: 10px;
+    margin-left: 95px;
 }
 
 .row {
@@ -133,7 +133,6 @@ a.axil-btn.btn-bg-secondary:before, button.axil-btn.btn-bg-secondary:before {
     margin-left: -15px;
 }
 
-.axil-signin-form .col-md-4,
 .axil-signin-form .col-md-3 {
     padding-right: 15px;
     padding-left: 15px;
@@ -147,7 +146,7 @@ a.axil-btn.btn-bg-secondary:before, button.axil-btn.btn-bg-secondary:before {
     line-height: 36.400001525878906px;
     margin-bottom: 16px;
     font-size: 24px;
-    margin-left: 240px;
+    margin-left: 170px;
 }
 
 .axil-signin-form p {
@@ -155,7 +154,7 @@ a.axil-btn.btn-bg-secondary:before, button.axil-btn.btn-bg-secondary:before {
     font-size: 14px;
     line-height: 23.100000381469727px;
     margin-bottom: 55px;
-    margin-left: 355px;
+    margin-left: 275px;
     padding-top: 10px;
 }
 
@@ -184,16 +183,15 @@ a.axil-btn.btn-bg-secondary:before, button.axil-btn.btn-bg-secondary:before {
     padding-bottom: 0px;
     padding-left: 30px;
     padding-top: 0px;
-    width: 85%;
+    width: 100%;
 }
 
-.axil-signin-form .col-md-4 .form-control,
 .axil-signin-form .col-md-3 .form-control {
-    width: 85%;
+    width: 100%;
 }
 
 .offset-md-1 .form-control {
-    width: 85%; 
+    width: calc(100% - 30px); 
 }
 
 a.axil-btn.btn-bg-primary, button.axil-btn.btn-bg-primary {
