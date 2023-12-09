@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.axil-signin-area {
+    color: rgb(119, 119, 119);
+    display: block;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    height: 455px;
+    right: 0px;
+    text-align: start;
+    top: 0px;
+    width: 1440px;
+}
+
+.signin-header {
+    padding-left: 100px;
+    padding-top: 40px;
+    position: fixed;
+    z-index: 1;
+}
+
+.signin-header .row {
+    height: 20px;
+}
+
+.signin-header .row .col-sm-4 {
+    width: 423.328125px;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+
+.signin-header .row .col-sm-8 {
+    padding-left: 15px;
+}
+
+.signin-header .singin-header-btn {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 816.65625px;
+    margin-left: 325px;
+}
+
+.signin-header .singin-header-btn p {
+    color: rgb(41, 41, 48);
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    margin-bottom: 0px;
+    width: 102.09375px;
+}
+
+.signin-header .singin-header-btn .sign-up-btn {
+    background-color: rgb(255, 73, 124);
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    cursor: auto;
+    font-weight: bold;
+    margin-left: 40px;
+    padding: 16px 38px 16px 38px;
+    position: relative;
+    z-index: 1;
+}
+
+.col-sm-4 img {
+    margin-left: 75px;
+    width: 118px;
+    padding-top: 15px;
+}
+
+a.axil-btn.btn-bg-secondary:before, button.axil-btn.btn-bg-secondary:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+
+.offset-xl-2 {
+    margin-left: 10px;
+}
+
+.row {
+    line-height: 27.200000762939453px;
+    margin-left: -15px;
+    width: 1470px;
+}
+
+.row .col-xl-4 {
+    padding-left: 15px;
+}
+
+.axil-signin-banner {
+    background-image: url("https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-9.jpg");
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+    height: 900px;
+    padding-left: 100px;
+    padding-top: 200px;
+    text-align: start;
+    width: 460px;
+}
+
+.axil-signin-banner h3 {
+    color: rgb(41, 41, 48);
+    font-weight: bold;
+    line-height: 36.400001525878906px;
+}
+
+.axil-signin-form-wrap {
+    margin-left: -30px;
+    margin-top: 170px;
+}
+
+.axil-signin-form {
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.axil-signin-form .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.axil-signin-form .col-md-4,
+.axil-signin-form .col-md-3 {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 10px;
+}
+
+.axil-signin-form .title {
+    color: rgb(41, 41, 48);
+    font-weight: bold;
+    height: 36px;
+    line-height: 36.400001525878906px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    margin-left: 240px;
+}
+
+.axil-signin-form p {
+    color: rgb(153, 159, 174);
+    font-size: 14px;
+    line-height: 23.100000381469727px;
+    margin-bottom: 55px;
+    margin-left: 355px;
+    padding-top: 10px;
+}
+
+.axil-signin-form .form-group {
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.form-group label {
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    left: 20px;
+    line-height: 22px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    position: absolute;
+    top: -11px;
+    z-index: 4;
+}
+
+.axil-signin-form .form-control {
+    -webkit-font-smoothing: antialiased;
+    color: rgb(119, 119, 119);
+    font-size: 14px;
+    height: 60px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-top: 0px;
+    width: 85%;
+}
+
+.axil-signin-form .col-md-4 .form-control,
+.axil-signin-form .col-md-3 .form-control {
+    width: 85%;
+}
+
+.offset-md-1 .form-control {
+    width: 85%; 
+}
+
+a.axil-btn.btn-bg-primary, button.axil-btn.btn-bg-primary {
+    background-color: rgb(53, 119, 240);
+    border-radius: 6px;
+    border: 0px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 16px 38px 16px 38px;
+    z-index: 1;
+    margin-left: 350px;
+}
+
+a.axil-btn.btn-bg-primary:before, button.axil-btn.btn-bg-primary:before {
+    content: "";
+    left: 0px;
+    position: absolute;
+    width: 126.421875px;
+    z-index: -1;
+}
+
+.axil-signin-form .forgot-btn {
+    -webkit-font-smoothing: antialiased;
+    color: rgb(53, 119, 240);
+    font-size: 14px;
+    width: 114.203125px;
+}
+
+@media (max-width: 576px) {
+    .axil-signin-banner {
+      display: none;
+    }
+    .col-sm-4 .site-logo {
+        padding-left: 120px;
+    }
+    .singin-header-btn {
+      margin-top: 20px;
+      flex-direction: column;
+    }
+    .singin-header-btn p {
+        margin-right: 440px;
+    }
+    .sign-up-btn {
+        margin-right: 490px;
+    }
+    .axil-signin-form .title {
+        padding-left: 190px;
+    }
+    .axil-signin-form p {
+        padding-left: 210px;
+    }
+    .singin-form {
+        padding-left: 100px;
+    }
+}
