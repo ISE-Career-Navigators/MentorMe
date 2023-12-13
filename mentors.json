@@ -1,0 +1,49 @@
+{
+  "mentors": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "title": "Senior Developer",
+      "description": "Experienced in web development and programming.",
+      "image": "john_doe.jpg",
+      "linkedin": "https://www.linkedin.com/in/johndoe",
+      "github": "https://github.com/johndoe"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "title": "UX Designer",
+      "description": "Passionate about creating user-friendly interfaces.",
+      "image": "jane_smith.jpg",
+      "linkedin": "https://www.linkedin.com/in/janesmith",
+      "github": "https://github.com/janesmith"
+    },
+    {
+      "id": 3,
+      "name": "Alex Johnson",
+      "title": "Data Scientist",
+      "description": "Specialized in data analysis and machine learning.",
+      "image": "alex_johnson.jpg",
+      "linkedin": "https://www.linkedin.com/in/alexjohnson",
+      "github": "https://github.com/alexjohnson"
+    },
+    {
+      "id": 4,
+      "name": "Emily White",
+      "title": "Frontend Developer",
+      "description": "Skilled in creating responsive and engaging user interfaces.",
+      "image": "emily_white.jpg",
+      "linkedin": "https://www.linkedin.com/in/emilywhite",
+      "github": "https://github.com/emilywhite"
+    },
+    {
+      "id": 5,
+      "name": "Mike Brown",
+      "title": "Product Manager",
+      "description": "Expert in product development and project management.",
+      "image": "mike_brown.jpg",
+      "linkedin": "https://www.linkedin.com/in/mikebrown",
+      "github": "https://github.com/mikebrown"
+    }
+  ]  
+}
