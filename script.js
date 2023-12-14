@@ -1,5 +1,6 @@
-// Define the path to the local JSON file
-const jsonFilePath = 'http://localhost:8080/mentors.json';
+//http-server --cors
+
+const jsonFilePath = 'http://localhost:3000/mentors';
 
 // Execute code when the DOM content is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
@@ -20,30 +21,30 @@ document.addEventListener('DOMContentLoaded', () => {
             const mentors = mentorsData; // Extract mentor data from the response
 
             // Function to render mentor cards based on the provided array of mentors
+            // ... (existing code)
+
+            // Function to render mentor cards based on the provided array of mentors
             function renderMentors(mentorsToRender) {
-                // Check if mentorsToRender is an object with a mentors property
-                if (mentorsToRender && Array.isArray(mentorsToRender.mentors)) {
-                    const data = mentorsToRender.mentors.map(mentor => `
-                        <div class="card" onclick="openMentorDetailPage(${mentor.id})">
-                            <h1 class="title">${mentor.name}</h1>
-                            <img src="${mentor.image}" alt="${mentor.name}" class="images">
-                            <p class="title">Title: ${mentor.title}</p>
-                            <p class="description">Description: ${mentor.description}</p>
-                            <p class="links">
-                                <a href="${mentor.linkedin}" target="_blank">LinkedIn</a> |
-                                <a href="${mentor.github}" target="_blank">GitHub</a>
-                            </p>
-                        </div>`
+                // Check if mentorsToRender is an array
+                if (Array.isArray(mentorsToRender)) {
+                    const data = mentorsToRender.map(mentor => `
+                    <div class="card" onclick="openMentorDetailPage(${mentor.id})">
+                        <h1 class="title">${mentor.name}</h1>
+                        <img src="${mentor.image}" alt="${mentor.name}" class="images">
+                        <p class="title">Title: ${mentor.title}</p>
+                        <p class="description">Description: ${mentor.description}</p>
+                        <p class="links">
+                            <a href="${mentor.linkedin}" target="_blank">LinkedIn</a> |
+                            <a href="${mentor.github}" target="_blank">GitHub</a>
+                        </p>
+                    </div>`
                     ).join('');
-            
+
                     cardsContainer.innerHTML = data;
                 } else {
-                    console.error('Error: mentorsToRender is not an object with mentors array', mentorsToRender);
+                    console.error('Error: mentorsToRender is not an array', mentorsToRender);
                 }
             }
-            
-            
-
             // Initial rendering of mentors
             renderMentors(mentors);
         })
@@ -55,4 +56,24 @@ document.addEventListener('DOMContentLoaded', () => {
 // Function to open the mentor detail page for a given mentorId
 function openMentorDetailPage(mentorId) {
     window.location.href = `mentor.html?id=${mentorId}`;
+}
+
+
+
+// Get reference to the search input
+const searchInput = document.getElementById('searchInput');
+
+// Event listener for the search input to filter mentors
+searchInput.addEventListener('input', function (event) {
+    const searchTerm = event.target.value.toLowerCase();
+    const filteredMentors = filterMentors(mentors, searchTerm);
+    renderMentors(filteredMentors);
+});
+
+
+// Function to filter mentors based on search term
+function filterMentors(mentorsToFilter, searchTerm) {
+    return mentorsToFilter.mentors.filter(mentor =>
+        mentor.name.toLowerCase().includes(searchTerm)
+    );
 }
