@@ -49,10 +49,10 @@ function renderMentors(mentorsToRender) {
         <div class="card" onclick="openMentorDetailPage(${mentor.id})">
             <h1 class="title">${mentor.name}</h1>
             <img src="${mentor.image}" alt="${mentor.name}" class="images">
-            <p class="title">Title: ${mentor.title}</p>
-            <p class="description">Description: ${mentor.description}</p>
-            ${mentor.country ? `<p class="details">Country: ${mentor.country}</p>` : ''}
-            ${mentor.company ? `<p class="details">Company: ${mentor.company}</p>` : ''}
+            <p class="title">${mentor.title}</p>
+            <p class="description">${mentor.description}</p>
+            ${mentor.country ? `<p class="details">${mentor.country}</p>` : ''}
+            ${mentor.company ? `<p class="details">${mentor.company}</p>` : ''}
             <p class="links">
                 <a href="${mentor.linkedin}" target="_blank">LinkedIn</a> |
                 <a href="${mentor.github}" target="_blank">GitHub</a>
