@@ -21,16 +21,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const mentors = mentorsData; // Extract mentor data from the response
 
             // Function to render mentor cards based on the provided array of mentors
-            // ... (existing code)
-
-            // Function to render mentor cards based on the provided array of mentors
             function renderMentors(mentorsToRender) {
                 // Check if mentorsToRender is an array
                 if (Array.isArray(mentorsToRender)) {
                     const data = mentorsToRender.map(mentor => `
                     <div class="card" onclick="openMentorDetailPage(${mentor.id})">
                         <h1 class="title">${mentor.name}</h1>
-                        <img src="${mentor.image}" alt="${mentor.name}" class="images">
+                        <img src="assets/${mentor.image}" alt="${mentor.name}" class="images">
                         <p class="title">Title: ${mentor.title}</p>
                         <p class="description">Description: ${mentor.description}</p>
                         <p class="links">
@@ -57,8 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
 function openMentorDetailPage(mentorId) {
     window.location.href = `mentor.html?id=${mentorId}`;
 }
-
-
 
 // Get reference to the search input
 const searchInput = document.getElementById('searchInput');
