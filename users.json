@@ -1,0 +1,479 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "image": "./assets/images/user.jpg",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "password": "password123",
+            "username": "john_doe",
+            "about": "Enthusiastic learner and tech enthusiast.",
+            "interests": [
+                "Technology",
+                "Programming",
+                "AI"
+            ],
+            "occupation": "Software Developer",
+            "card": {
+                "number": "1234567890123456",
+                "cvc": "123",
+                "expirationDate": "12/24"
+            },
+            "sessions": [
+                {
+                    "sessionId": 101,
+                    "title": "Intro to AI",
+                    "startDate": "2023-01-10",
+                    "endDate": "2023-01-11"
+                },
+                {
+                    "sessionId": 102,
+                    "title": "Quantum ML",
+                    "startDate": "2023-02-10",
+                    "endDate": "2023-02-11"
+                }
+            ],
+            "mPackages": [
+                {
+                    "packageId": 201,
+                    "resourceLink": "http://example.com/resources",
+                    "price": 100
+                }
+            ],
+            "eventsAttended": [
+                {
+                    "eventId": 301,
+                    "title": "Tech Conference 2023"
+                }
+            ],
+            "savedJobs": [
+                {
+                    "jobId": 401,
+                    "title": "Senior Developer"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "image": "./assets/images/user.jpg",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "password": "password123",
+            "username": "john_doe",
+            "about": "Enthusiastic learner and tech enthusiast.",
+            "interests": [
+                "Technology",
+                "Programming",
+                "AI"
+            ],
+            "occupation": "Software Developer",
+            "card": {
+                "number": "1234567890123456",
+                "cvc": "123",
+                "expirationDate": "12/24"
+            },
+            "sessions": [
+                {
+                    "sessionId": 101,
+                    "title": "Intro to AI",
+                    "startDate": "2023-01-10",
+                    "endDate": "2023-01-11"
+                }
+            ],
+            "mPackages": [
+                {
+                    "packageId": 201,
+                    "resourceLink": "http://example.com/resources",
+                    "price": 100
+                }
+            ],
+            "eventsAttended": [
+                {
+                    "eventId": 301,
+                    "title": "Tech Conference 2023"
+                }
+            ],
+            "savedJobs": [
+                {
+                    "jobId": 401,
+                    "title": "Senior Developer"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "password": "password123",
+            "username": "john_doe",
+            "about": "Enthusiastic learner and tech enthusiast.",
+            "interests": [
+                "Technology",
+                "Programming",
+                "AI"
+            ],
+            "occupation": "Software Developer",
+            "card": {
+                "number": "1234567890123456",
+                "cvc": "123",
+                "expirationDate": "12/24"
+            },
+            "sessions": [
+                {
+                    "sessionId": 101,
+                    "title": "Intro to AI",
+                    "startDate": "2023-01-10",
+                    "endDate": "2023-01-11"
+                }
+            ],
+            "mPackages": [
+                {
+                    "packageId": 201,
+                    "resourceLink": "http://example.com/resources",
+                    "price": 100
+                }
+            ],
+            "eventsAttended": [
+                {
+                    "eventId": 301,
+                    "title": "Tech Conference 2023"
+                }
+            ],
+            "savedJobs": [
+                {
+                    "jobId": 401,
+                    "title": "Senior Developer"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "image": "./assets/images/user.jpg",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "password": "password123",
+            "username": "john_doe",
+            "about": "Enthusiastic learner and tech enthusiast.",
+            "interests": [
+                "Technology",
+                "Programming",
+                "AI"
+            ],
+            "occupation": "Software Developer",
+            "card": {
+                "number": "1234567890123456",
+                "cvc": "123",
+                "expirationDate": "12/24"
+            },
+            "sessions": [
+                {
+                    "sessionId": 101,
+                    "title": "Intro to AI",
+                    "startDate": "2023-01-10",
+                    "endDate": "2023-01-11"
+                }
+            ],
+            "mPackages": [
+                {
+                    "packageId": 201,
+                    "resourceLink": "http://example.com/resources",
+                    "price": 100
+                }
+            ],
+            "eventsAttended": [
+                {
+                    "eventId": 301,
+                    "title": "Tech Conference 2023"
+                }
+            ],
+            "savedJobs": [
+                {
+                    "jobId": 401,
+                    "title": "Senior Developer"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "image": "./assets/images/user.jpg",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "password": "password123",
+            "username": "john_doe",
+            "about": "Enthusiastic learner and tech enthusiast.",
+            "interests": [
+                "Technology",
+                "Programming",
+                "AI"
+            ],
+            "occupation": "Software Developer",
+            "card": {
+                "number": "1234567890123456",
+                "cvc": "123",
+                "expirationDate": "12/24"
+            },
+            "sessions": [
+                {
+                    "sessionId": 101,
+                    "title": "Intro to AI",
+                    "startDate": "2023-01-10",
+                    "endDate": "2023-01-11"
+                }
+            ],
+            "mPackages": [
+                {
+                    "packageId": 201,
+                    "resourceLink": "http://example.com/resources",
+                    "price": 100
+                }
+            ],
+            "eventsAttended": [
+                {
+                    "eventId": 301,
+                    "title": "Tech Conference 2023"
+                }
+            ],
+            "savedJobs": [
+                {
+                    "jobId": 401,
+                    "title": "Senior Developer"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "image": "./assets/images/user.jpg",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "password": "password123",
+            "username": "john_doe",
+            "about": "Enthusiastic learner and tech enthusiast.",
+            "interests": [
+                "Technology",
+                "Programming",
+                "AI"
+            ],
+            "occupation": "Software Developer",
+            "card": {
+                "number": "1234567890123456",
+                "cvc": "123",
+                "expirationDate": "12/24"
+            },
+            "sessions": [
+                {
+                    "sessionId": 101,
+                    "title": "Intro to AI",
+                    "startDate": "2023-01-10",
+                    "endDate": "2023-01-11"
+                }
+            ],
+            "mPackages": [
+                {
+                    "packageId": 201,
+                    "resourceLink": "http://example.com/resources",
+                    "price": 100
+                }
+            ],
+            "eventsAttended": [
+                {
+                    "eventId": 301,
+                    "title": "Tech Conference 2023"
+                }
+            ],
+            "savedJobs": [
+                {
+                    "jobId": 401,
+                    "title": "Senior Developer"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "image": "./assets/images/user.jpg",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "password": "password123",
+            "username": "john_doe",
+            "about": "Enthusiastic learner and tech enthusiast.",
+            "interests": [
+                "Technology",
+                "Programming",
+                "AI"
+            ],
+            "occupation": "Software Developer",
+            "card": {
+                "number": "1234567890123456",
+                "cvc": "123",
+                "expirationDate": "12/24"
+            },
+            "sessions": [
+                {
+                    "sessionId": 101,
+                    "title": "Intro to AI",
+                    "startDate": "2023-01-10",
+                    "endDate": "2023-01-11"
+                }
+            ],
+            "mPackages": [
+                {
+                    "packageId": 201,
+                    "resourceLink": "http://example.com/resources",
+                    "price": 100
+                }
+            ],
+            "eventsAttended": [
+                {
+                    "eventId": 301,
+                    "title": "Tech Conference 2023"
+                }
+            ],
+            "savedJobs": [
+                {
+                    "jobId": 401,
+                    "title": "Senior Developer"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "image": "./assets/images/user.jpg",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "password": "password123",
+            "username": "john_doe",
+            "about": "Enthusiastic learner and tech enthusiast.",
+            "interests": [
+                "Technology",
+                "Programming",
+                "AI"
+            ],
+            "occupation": "Software Developer",
+            "card": {
+                "number": "1234567890123456",
+                "cvc": "123",
+                "expirationDate": "12/24"
+            },
+            "sessions": [
+                {
+                    "sessionId": 101,
+                    "title": "Intro to AI",
+                    "startDate": "2023-01-10",
+                    "endDate": "2023-01-11"
+                }
+            ],
+            "mPackages": [
+                {
+                    "packageId": 201,
+                    "resourceLink": "http://example.com/resources",
+                    "price": 100
+                }
+            ],
+            "eventsAttended": [
+                {
+                    "eventId": 301,
+                    "title": "Tech Conference 2023"
+                }
+            ],
+            "savedJobs": [
+                {
+                    "jobId": 401,
+                    "title": "Senior Developer"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "image": "./assets/images/user.jpg",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "password": "password123",
+            "username": "john_doe",
+            "about": "Enthusiastic learner and tech enthusiast.",
+            "interests": [
+                "Technology",
+                "Programming",
+                "AI"
+            ],
+            "occupation": "Software Developer",
+            "card": {
+                "number": "1234567890123456",
+                "cvc": "123",
+                "expirationDate": "12/24"
+            },
+            "sessions": [
+                {
+                    "sessionId": 101,
+                    "title": "Intro to AI",
+                    "startDate": "2023-01-10",
+                    "endDate": "2023-01-11"
+                }
+            ],
+            "mPackages": [
+                {
+                    "packageId": 201,
+                    "resourceLink": "http://example.com/resources",
+                    "price": 100
+                }
+            ],
+            "eventsAttended": [
+                {
+                    "eventId": 301,
+                    "title": "Tech Conference 2023"
+                }
+            ],
+            "savedJobs": [
+                {
+                    "jobId": 401,
+                    "title": "Senior Developer"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "image": "./assets/images/user.jpg",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "password": "password123",
+            "username": "john_doe",
+            "about": "Enthusiastic learner and tech enthusiast.",
+            "interests": [
+                "Technology",
+                "Programming",
+                "AI"
+            ],
+            "occupation": "Software Developer",
+            "card": {
+                "number": "1234567890123456",
+                "cvc": "123",
+                "expirationDate": "12/24"
+            },
+            "sessions": [
+                {
+                    "sessionId": 101,
+                    "title": "Intro to AI",
+                    "startDate": "2023-01-10",
+                    "endDate": "2023-01-11"
+                }
+            ],
+            "mPackages": [
+                {
+                    "packageId": 201,
+                    "resourceLink": "http://example.com/resources",
+                    "price": 100
+                }
+            ],
+            "eventsAttended": [
+                {
+                    "eventId": 301,
+                    "title": "Tech Conference 2023"
+                }
+            ],
+            "savedJobs": [
+                {
+                    "jobId": 401,
+                    "title": "Senior Developer"
+                }
+            ]
+        }
+    ]
+}
