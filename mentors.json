@@ -11,7 +11,14 @@
       "rating": 4.0,
       "workplace": "NextGen Innovation",
       "location": "San Francisco, CA, USA",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        "Alice's insights into system design have greatly enhanced my skills.",
+        "Approachable and knowledgeable, making her an outstanding mentor."
+      ]
     },
     {
       "id": 2,
@@ -24,7 +31,14 @@
       "rating": 4.0,
       "workplace": "BlueTech Solutions",
       "location": "Berlin, Germany",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        "Alice's insights into system design have greatly enhanced my skills.",
+        "Approachable and knowledgeable, making her an outstanding mentor."
+      ]
     },
     {
       "id": 3,
@@ -37,7 +51,14 @@
       "rating": 4.0,
       "workplace": "Quantum Computing Inc.",
       "location": "Tokyo, Japan",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        "Alice's insights into system design have greatly enhanced my skills.",
+        "Approachable and knowledgeable, making her an outstanding mentor."
+      ]
     },
     {
       "id": 4,
@@ -50,7 +71,14 @@
       "rating": 4.0,
       "workplace": "Greenfield Networks",
       "location": "London, UK",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        "Alice's insights into system design have greatly enhanced my skills.",
+        "Approachable and knowledgeable, making her an outstanding mentor."
+      ]
     },
     {
       "id": 5,
@@ -63,7 +91,14 @@
       "rating": 4.0,
       "workplace": "Elite Software Group",
       "location": "Sydney, Australia",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        "Alice's insights into system design have greatly enhanced my skills.",
+        "Approachable and knowledgeable, making her an outstanding mentor."
+      ]
     },
     {
       "id": 6,
@@ -76,7 +111,14 @@
       "rating": 4.0,
       "workplace": "Virtuality Labs",
       "location": "New York, NY, USA",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        "Alice's insights into system design have greatly enhanced my skills.",
+        "Approachable and knowledgeable, making her an outstanding mentor."
+      ]
     },
     {
       "id": 7,
@@ -89,7 +131,14 @@
       "rating": 4.0,
       "workplace": "Orbital Systems",
       "location": "Toronto, Canada",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        "Alice's insights into system design have greatly enhanced my skills.",
+        "Approachable and knowledgeable, making her an outstanding mentor."
+      ]
     },
     {
       "id": 8,
@@ -102,7 +151,14 @@
       "rating": 4.0,
       "workplace": "FutureScape Technologies",
       "location": "Singapore",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        "Alice's insights into system design have greatly enhanced my skills.",
+        "Approachable and knowledgeable, making her an outstanding mentor."
+      ]
     },
     {
       "id": 9,
@@ -115,7 +171,14 @@
       "rating": 4.0,
       "workplace": "CyberDynamics",
       "location": "Bangalore, India",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        "Alice's insights into system design have greatly enhanced my skills.",
+        "Approachable and knowledgeable, making her an outstanding mentor."
+      ]
     },
     {
       "id": 10,
@@ -128,7 +191,36 @@
       "rating": 4.0,
       "workplace": "SolarStream Technologies",
       "location": "Stockholm, Sweden",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        "Alice's insights into system design have greatly enhanced my skills.",
+        "Approachable and knowledgeable, making her an outstanding mentor."
+      ]
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "title": "IT Systems Engineer",
+      "description": "Experienced in designing, implementing, and maintaining IT systems for optimal performance and efficiency.",
+      "image": "images/alice_johnson.jpeg",
+      "linkedin": "https://www.linkedin.com/in/alicejohnson",
+      "github": "https://github.com/alicejohnson",
+      "rating": 4.0,
+      "workplace": "NextGen Innovation",
+      "location": "San Francisco, CA, USA",
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        "Alice's insights into system design have greatly enhanced my skills.",
+        "Approachable and knowledgeable, making her an outstanding mentor."
+      ]
+    },
   ]
 }

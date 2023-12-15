@@ -60,6 +60,35 @@ function renderMentorProfile(mentor) {
     document.getElementById('book-appointment').addEventListener('click', () => {
         bookAppointment(mentor.id);
     });
+
+    document.getElementById('mentor-expertise').textContent = mentor.expertise;
+    document.getElementById('mentor-education').textContent = mentor.education;
+    document.getElementById('mentor-interests').textContent = mentor.interests;
+    // document.getElementById('mentor-feedbacks').textContent = mentor.feedbacks;
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const slider = document.getElementById('review-slider');
+        let scrollAmount = 0;
+    
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
+    
+        nextBtn.addEventListener('click', () => {
+            slider.scrollTo({
+                top: 0,
+                left: (scrollAmount += slider.offsetWidth),
+                behavior: 'smooth'
+            });
+        });
+    
+        prevBtn.addEventListener('click', () => {
+            slider.scrollTo({
+                top: 0,
+                left: (scrollAmount -= slider.offsetWidth),
+                behavior: 'smooth'
+            });
+        });
+    });    
 }
 
 // Function to handle booking an appointment

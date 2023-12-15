@@ -3,7 +3,9 @@ body {
     background-color: #F3F4F6;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -12,10 +14,34 @@ p {
     color: #333333;
 }
 
+.mentor {
+    display: flex;
+}
+
 /* Mentor Profile */
+.mentor-profile-container {
+    margin-top: 30px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    background: linear-gradient(45deg, #003366, #29ABE2);
+    border-radius: 10%;
+    width: 40%;
+}
+
 #mentor-profile {
-    margin: 30px;
-    width: 30%;
+    background-color: #F3F4F6;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-radius: 10%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#mentor-image {
+    border-radius: 50%; /* Circular shape */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .star-rating {
@@ -45,7 +71,8 @@ i {
     color: #4CAF50;
 }
 
-#mentor-workplace, #mentor-location {
+#mentor-workplace,
+#mentor-location {
     margin-bottom: 0;
 }
 
@@ -53,33 +80,89 @@ i {
 #mentor-social-media {
     display: flex;
     gap: 10px;
+    justify-content: space-around;
 }
 
-#mentor-social-media img {    
-    width: 20px;
-    height: 20px;
+#mentor-social-media img {
+    width: 40px;
+    height: 40px;
     display: inline-block;
     line-height: 30px;
+
 }
 
 /* Button */
 #book-appointment {
     margin-top: 10px;
     color: #FFFFFF;
-    background-color: #003366;
-    padding: 10px 20px; /* Top and bottom padding of 10px, left and right padding of 20px */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Mouse cursor changes to pointer when hovering over the button */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+    background-color: #29ABE2;
+    padding: 10px 20px;
+    /* Top and bottom padding of 10px, left and right padding of 20px */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Mouse cursor changes to pointer when hovering over the button */
+    font-size: 16px;
+    /* Font size */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth transition for hover effects */
 }
 
 #book-appointment:hover {
-    background-color: #45a049; /* Slightly darker green on hover */
-    transform: scale(1.05); /* Slightly increase the size of the button */
+    background-color: #45a049;
+    /* Slightly darker green on hover */
+    transform: scale(1.05);
+    /* Slightly increase the size of the button */
 }
 
 #book-appointment:focus {
-    outline: none; /* Removes the outline shown on some browsers when the button is focused */
+    outline: none;
+    /* Removes the outline shown on some browsers when the button is focused */
+}
+
+.appointment {
+    display: flex;
+    justify-content: center;
+}
+
+/*About*/
+.mentor-about {
+    padding: 20px;
+}
+
+.mentor-about h2 {
+    border-bottom: 5px solid #003366;
+    padding-bottom: 10px;
+    width: 30%;
+}
+
+.review-slider {
+    display: flex;
+    overflow: hidden;
+    width: 600px; /* Adjust based on your design */
+}
+
+.review-slide {
+    min-width: 100%;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-right: 15px;
+    background-color: white;
+}
+
+.review-user-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.review-user-name {
+    color: #636363;
+}
+
+.review-comment {
+    color: #0094C9;
 }
