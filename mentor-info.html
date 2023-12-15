@@ -8,16 +8,49 @@
 
 <body>
     <div id="mentor-profile">
-        <img id="mentor-image" src="" alt="Mentor's Image">
-        <h1 id="mentor-name"></h1>
-        <h2 id="mentor-title"></h2>
-        <p id="mentor-description"></p>
-        <a id="mentor-linkedin" href="" target="_blank">LinkedIn</a>
-        <a id="mentor-github" href="" target="_blank">GitHub</a>
+        <div class="mentor-profile-intro">
+            <img id="mentor-image" src="" alt="Mentor's Image">
+            <div class="mentor-details">
+                <h1 id="mentor-name"></h1>
+                <h2 id="mentor-occupation"></h2>
+                <div id="mentor-rating"></div>
+            </div>
+        </div>
+        <div class="mentor-work-details">
+            <div>
+                <i class="fa-solid fa-briefcase"></i>
+                <h3 id="mentor-workplace"></h3>
+            </div>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <h3 id="mentor-location"></h3>
+            </div>
+        </div>
+        <p id="mentor-about"></p>
+        <div id="mentor-social-media">
+            <a id="mentor-linkedin" href="" target="_blank"><img src="./assets/icons/linkedin.svg" /></a>
+            <a id="mentor-github" href="https://github.com/apricityyyy" target="_blank"><img src="./assets/icons/github.svg" /></a>
+        </div>
         <button id="book-appointment">Book Appointment</button>
     </div>
 
+    <div class="mentor-about">
+        <div class="mentor-expertise">
+
+        </div>
+        <div class="mentor-education">
+
+        </div>
+        <div class="mentor-interests">
+
+        </div>
+        <div class="mentor-feedbacks">
+
+        </div>
+    </div>
+
     <script src="./scripts/info-script.js"></script>
+    <script src="https://kit.fontawesome.com/8e25129cf2.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
