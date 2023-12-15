@@ -64,31 +64,17 @@ function renderMentorProfile(mentor) {
     document.getElementById('mentor-expertise').textContent = mentor.expertise;
     document.getElementById('mentor-education').textContent = mentor.education;
     document.getElementById('mentor-interests').textContent = mentor.interests;
-    // document.getElementById('mentor-feedbacks').textContent = mentor.feedbacks;
-
-    document.addEventListener('DOMContentLoaded', () => {
-        const slider = document.getElementById('review-slider');
-        let scrollAmount = 0;
     
-        const nextBtn = document.getElementById('nextBtn');
-        const prevBtn = document.getElementById('prevBtn');
+    // slider reviews part
+    const nameElements = document.getElementsByClassName('review-user-name');
+    const commentElements = document.getElementsByClassName('review-comment');
+    mentor.feedbacks.forEach((feedback, index) => {
+        if (index < nameElements.length) {
+            nameElements[index].textContent = feedback.name;
+            commentElements[index].textContent = feedback.comment;
+        }
+    });
     
-        nextBtn.addEventListener('click', () => {
-            slider.scrollTo({
-                top: 0,
-                left: (scrollAmount += slider.offsetWidth),
-                behavior: 'smooth'
-            });
-        });
-    
-        prevBtn.addEventListener('click', () => {
-            slider.scrollTo({
-                top: 0,
-                left: (scrollAmount -= slider.offsetWidth),
-                behavior: 'smooth'
-            });
-        });
-    });    
 }
 
 // Function to handle booking an appointment
@@ -99,3 +85,26 @@ function bookAppointment(mentorId) {
 
 // Load the mentor profile
 loadMentorProfile(mentorId);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.getElementById('review-slider');
+    let currentIndex = 0;
+
+    const slides = slider.getElementsByClassName('review-slide');
+    const numberOfSlides = slides.length;
+
+    // Function to move to the next slide
+    function moveToNextSlide() {
+        slides[currentIndex].style.display = 'none'; // Hide current slide
+        currentIndex = (currentIndex + 1) % numberOfSlides; // Update index
+        slides[currentIndex].style.display = 'block'; // Show next slide
+    }
+
+    // Initialize all slides to be hidden except the first one
+    Array.from(slides).forEach((slide, index) => {
+        slide.style.display = index === 0 ? 'block' : 'none';
+    });
+
+    // Set interval for automatic sliding
+    setInterval(moveToNextSlide, 3000); // Change slide every 3000 milliseconds (3 seconds)
+});

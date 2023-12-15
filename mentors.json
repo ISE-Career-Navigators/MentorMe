@@ -16,8 +16,26 @@
       "education": "M.S. in Computer Science, Stanford University",
       "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
       "feedbacks": [
-        "Alice's insights into system design have greatly enhanced my skills.",
-        "Approachable and knowledgeable, making her an outstanding mentor."
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
       ]
     },
     {
@@ -36,8 +54,26 @@
       "education": "M.S. in Computer Science, Stanford University",
       "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
       "feedbacks": [
-        "Alice's insights into system design have greatly enhanced my skills.",
-        "Approachable and knowledgeable, making her an outstanding mentor."
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
       ]
     },
     {
@@ -56,8 +92,26 @@
       "education": "M.S. in Computer Science, Stanford University",
       "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
       "feedbacks": [
-        "Alice's insights into system design have greatly enhanced my skills.",
-        "Approachable and knowledgeable, making her an outstanding mentor."
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
       ]
     },
     {
@@ -76,8 +130,26 @@
       "education": "M.S. in Computer Science, Stanford University",
       "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
       "feedbacks": [
-        "Alice's insights into system design have greatly enhanced my skills.",
-        "Approachable and knowledgeable, making her an outstanding mentor."
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
       ]
     },
     {
@@ -96,8 +168,26 @@
       "education": "M.S. in Computer Science, Stanford University",
       "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
       "feedbacks": [
-        "Alice's insights into system design have greatly enhanced my skills.",
-        "Approachable and knowledgeable, making her an outstanding mentor."
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
       ]
     },
     {
@@ -116,8 +206,26 @@
       "education": "M.S. in Computer Science, Stanford University",
       "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
       "feedbacks": [
-        "Alice's insights into system design have greatly enhanced my skills.",
-        "Approachable and knowledgeable, making her an outstanding mentor."
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
       ]
     },
     {
@@ -136,8 +244,26 @@
       "education": "M.S. in Computer Science, Stanford University",
       "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
       "feedbacks": [
-        "Alice's insights into system design have greatly enhanced my skills.",
-        "Approachable and knowledgeable, making her an outstanding mentor."
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
       ]
     },
     {
@@ -156,8 +282,26 @@
       "education": "M.S. in Computer Science, Stanford University",
       "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
       "feedbacks": [
-        "Alice's insights into system design have greatly enhanced my skills.",
-        "Approachable and knowledgeable, making her an outstanding mentor."
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
       ]
     },
     {
@@ -176,8 +320,26 @@
       "education": "M.S. in Computer Science, Stanford University",
       "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
       "feedbacks": [
-        "Alice's insights into system design have greatly enhanced my skills.",
-        "Approachable and knowledgeable, making her an outstanding mentor."
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
       ]
     },
     {
@@ -196,31 +358,27 @@
       "education": "M.S. in Computer Science, Stanford University",
       "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
       "feedbacks": [
-        "Alice's insights into system design have greatly enhanced my skills.",
-        "Approachable and knowledgeable, making her an outstanding mentor."
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
       ]
     }
-  ],
-  "users": [
-    {
-      "id": 1,
-      "name": "Alice Johnson",
-      "title": "IT Systems Engineer",
-      "description": "Experienced in designing, implementing, and maintaining IT systems for optimal performance and efficiency.",
-      "image": "images/alice_johnson.jpeg",
-      "linkedin": "https://www.linkedin.com/in/alicejohnson",
-      "github": "https://github.com/alicejohnson",
-      "rating": 4.0,
-      "workplace": "NextGen Innovation",
-      "location": "San Francisco, CA, USA",
-      "price": "100 AZN",
-      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
-      "education": "M.S. in Computer Science, Stanford University",
-      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
-      "feedbacks": [
-        "Alice's insights into system design have greatly enhanced my skills.",
-        "Approachable and knowledgeable, making her an outstanding mentor."
-      ]
-    },
   ]
 }
