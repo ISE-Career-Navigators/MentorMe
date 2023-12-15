@@ -17,7 +17,8 @@ body {
     font-size: 40px;
     margin-bottom: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #333; /* Text color */
+    color: #333;
+    /* Text color */
 }
 
 /* Styling for filter and search containers */
@@ -58,8 +59,10 @@ select {
     padding: 18px;
     margin-bottom: 30px;
     border-radius: 8px;
-    background-color: #fff; /* Card background color */
-    transition: transform 0.3s ease-in-out; /* Smooth card hover effect */
+    background-color: #fff;
+    /* Card background color */
+    transition: transform 0.3s ease-in-out;
+    /* Smooth card hover effect */
     cursor: pointer;
 }
 
@@ -96,7 +99,8 @@ select {
 .category {
     font-size: 16px;
     font-weight: bold;
-    color: rgb(183, 94, 180); /* Category color */
+    color: rgb(183, 94, 180);
+    /* Category color */
     margin-top: 10px;
 }
 
@@ -110,17 +114,41 @@ select {
 
 /* Styling for pagination buttons */
 .pagination button {
-    background-color: #3498db; /* Button background color */
-    color: #fff; /* Button text color */
+    background-color: #3498db;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
     border: none;
     padding: 10px 15px;
     margin: 0 5px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out; /* Smooth button hover effect */
+    transition: background-color 0.3s ease-in-out;
+    /* Smooth button hover effect */
 }
 
 /* Hover effect for pagination buttons */
 .pagination button:hover {
+    background-color: #2980b9;
+}
+
+/* Styling for the search button */
+#searchButton {
+    background-color: #3498db;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    /* Add some spacing between the input and button */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    /* Smooth button hover effect */
+}
+
+/* Hover effect for the search button */
+#searchButton:hover {
     background-color: #2980b9;
 }

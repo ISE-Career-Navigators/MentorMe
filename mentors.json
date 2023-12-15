@@ -2,48 +2,93 @@
   "mentors": [
     {
       "id": 1,
-      "name": "John Doe",
-      "title": "Senior Developer",
-      "description": "Experienced in web development and programming.",
-      "image": "john_doe.jpg",
-      "linkedin": "https://www.linkedin.com/in/johndoe",
-      "github": "https://github.com/johndoe"
+      "name": "Alice Johnson",
+      "title": "IT Systems Engineer",
+      "description": "Experienced in designing, implementing, and maintaining IT systems for optimal performance and efficiency.",
+      "image": "assets/images/alice_johnson.jpeg",
+      "linkedin": "https://www.linkedin.com/in/alicejohnson",
+      "github": "https://github.com/alicejohnson"
     },
     {
       "id": 2,
-      "name": "Jane Smith",
-      "title": "UX Designer",
-      "description": "Passionate about creating user-friendly interfaces.",
-      "image": "jane_smith.jpg",
-      "linkedin": "https://www.linkedin.com/in/janesmith",
-      "github": "https://github.com/janesmith"
+      "name": "Bob Anderson",
+      "title": "IT Solutions Architect",
+      "description": "Specialized in architecting comprehensive IT solutions to meet business requirements and enhance organizational capabilities.",
+      "image": "assets/images/bob_anderson.jpeg",
+      "linkedin": "https://www.linkedin.com/in/bobanderson",
+      "github": "https://github.com/bobanderson"
     },
     {
       "id": 3,
-      "name": "Alex Johnson",
-      "title": "Data Scientist",
-      "description": "Specialized in data analysis and machine learning.",
-      "image": "alex_johnson.jpg",
-      "linkedin": "https://www.linkedin.com/in/alexjohnson",
-      "github": "https://github.com/alexjohnson"
+      "name": "Charlie Martinez",
+      "title": "IT Data Scientist",
+      "description": "Data scientist with a focus on IT-related datasets, skilled in extracting valuable insights to drive informed decision-making.",
+      "image": "assets/images/charlie_martinez.jpg",
+      "linkedin": "https://www.linkedin.com/in/charliemartinez",
+      "github": "https://github.com/charliemartinez"
     },
     {
       "id": 4,
-      "name": "Emily White",
-      "title": "Frontend Developer",
-      "description": "Skilled in creating responsive and engaging user interfaces.",
-      "image": "emily_white.jpg",
-      "linkedin": "https://www.linkedin.com/in/emilywhite",
-      "github": "https://github.com/emilywhite"
+      "name": "Diana White",
+      "title": "IT Frontend Developer",
+      "description": "Frontend developer specializing in creating user-friendly and visually appealing IT-related interfaces with cutting-edge technologies.",
+      "image": "assets/images/diana_white.jpg",
+      "linkedin": "https://www.linkedin.com/in/dianawhite",
+      "github": "https://github.com/dianawhite"
     },
     {
       "id": 5,
-      "name": "Mike Brown",
-      "title": "Product Manager",
-      "description": "Expert in product development and project management.",
-      "image": "mike_brown.jpg",
-      "linkedin": "https://www.linkedin.com/in/mikebrown",
-      "github": "https://github.com/mikebrown"
+      "name": "Ethan Davis",
+      "title": "IT Product Manager",
+      "description": "Product manager with a focus on IT product development, experienced in guiding projects from conception to successful deployment.",
+      "image": "assets/images/ethan_davis.jpg",
+      "linkedin": "https://www.linkedin.com/in/ethandavis",
+      "github": "https://github.com/ethandavis"
+    },
+    {
+      "id": 6,
+      "name": "Fiona Lee",
+      "title": "IT Security Analyst",
+      "description": "Expert in cybersecurity, specializing in analyzing and enhancing the security posture of IT systems and networks.",
+      "image": "assets/images/fiona_lee.jpeg",
+      "linkedin": "https://www.linkedin.com/in/fionalee",
+      "github": "https://github.com/fionalee"
+    },
+    {
+      "id": 7,
+      "name": "George Taylor",
+      "title": "IT Cloud Architect",
+      "description": "Cloud architect with a focus on designing scalable and reliable IT solutions in cloud environments.",
+      "image": "assets/images/george_taylor.jpeg",
+      "linkedin": "https://www.linkedin.com/in/georgetaylor",
+      "github": "https://github.com/georgetaylor"
+    },
+    {
+      "id": 8,
+      "name": "Hannah Parker",
+      "title": "IT UX/UI Designer",
+      "description": "Passionate about creating intuitive and visually appealing user experiences for IT applications and websites.",
+      "image": "assets/images/hannah_parker.jpeg",
+      "linkedin": "https://www.linkedin.com/in/hannahparker",
+      "github": "https://github.com/hannahparker"
+    },
+    {
+      "id": 9,
+      "name": "Ian Rodriguez",
+      "title": "IT DevOps Engineer",
+      "description": "DevOps engineer specializing in streamlining IT development and operations processes for improved efficiency and collaboration.",
+      "image": "assets/images/ian_rodriguez.png",
+      "linkedin": "https://www.linkedin.com/in/ianrodriguez",
+      "github": "https://github.com/ianrodriguez"
+    },
+    {
+      "id": 10,
+      "name": "Jessica Kim",
+      "title": "IT Mobile App Developer",
+      "description": "Mobile app developer with expertise in creating innovative and user-friendly IT applications for iOS and Android platforms.",
+      "image": "assets/images/jessica_kim.jpeg",
+      "linkedin": "https://www.linkedin.com/in/jessicakim",
+      "github": "https://github.com/jessicakim"
     }
-  ]  
+  ]
 }
