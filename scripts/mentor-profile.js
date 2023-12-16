@@ -66,7 +66,7 @@ function updateUserProfile(userId) {
         sessions: document.getElementById('sessions-previous').value,
     };
 
-    fetch(`http://localhost:3000/users/${userId}`, {
+    fetch(`http://localhost:3000/mentors/${mentorId}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',

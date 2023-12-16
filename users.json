@@ -1,28 +1,6 @@
 {
   "users": [
     {
-      "name": "Alice Johnson",
-      "email": "johndoe@example.com",
-      "password": "password123",
-      "username": "john_doe",
-      "description": "Experienced in designing, implementing, and maintaining IT systems for optimal performance and efficiency.",
-      "linkedin": "https://www.linkedin.com/in/alicejohnson",
-      "github": "https://github.com/alicejohnson",
-      "workplace": "NextGen Innovation",
-      "location": "San Francisco, CA, USA",
-      "price": "100 AZN",
-      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, focusing on delivering cutting-edge solutions in these domains.",
-      "education": "M.S. in Computer Science, Stanford University",
-      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
-      "title": "IT Systems Engineer",
-      "card": {
-        "number": "1234567890123456",
-        "cvc": "123",
-        "expirationDate": "12/24"
-      },
-      "id": 1
-    },
-    {
       "id": 1,
       "image": "./assets/images/user.jpg",
       "name": "John Doe",
