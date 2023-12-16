@@ -11,7 +11,32 @@
       "rating": 4.0,
       "workplace": "NextGen Innovation",
       "location": "San Francisco, CA, USA",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
+      ]
     },
     {
       "id": 2,
@@ -24,7 +49,32 @@
       "rating": 4.0,
       "workplace": "BlueTech Solutions",
       "location": "Berlin, Germany",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
+      ]
     },
     {
       "id": 3,
@@ -37,7 +87,32 @@
       "rating": 4.0,
       "workplace": "Quantum Computing Inc.",
       "location": "Tokyo, Japan",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
+      ]
     },
     {
       "id": 4,
@@ -50,7 +125,32 @@
       "rating": 4.0,
       "workplace": "Greenfield Networks",
       "location": "London, UK",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
+      ]
     },
     {
       "id": 5,
@@ -63,7 +163,32 @@
       "rating": 4.0,
       "workplace": "Elite Software Group",
       "location": "Sydney, Australia",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
+      ]
     },
     {
       "id": 6,
@@ -76,7 +201,32 @@
       "rating": 4.0,
       "workplace": "Virtuality Labs",
       "location": "New York, NY, USA",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
+      ]
     },
     {
       "id": 7,
@@ -89,7 +239,32 @@
       "rating": 4.0,
       "workplace": "Orbital Systems",
       "location": "Toronto, Canada",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
+      ]
     },
     {
       "id": 8,
@@ -102,7 +277,32 @@
       "rating": 4.0,
       "workplace": "FutureScape Technologies",
       "location": "Singapore",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
+      ]
     },
     {
       "id": 9,
@@ -115,7 +315,32 @@
       "rating": 4.0,
       "workplace": "CyberDynamics",
       "location": "Bangalore, India",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
+      ]
     },
     {
       "id": 10,
@@ -128,7 +353,32 @@
       "rating": 4.0,
       "workplace": "SolarStream Technologies",
       "location": "Stockholm, Sweden",
-      "price": "100 AZN"
+      "price": "100 AZN",
+      "expertise": "I specialize in Cloud Computing, Network Security, and System Architecture, with a focus on delivering cutting-edge solutions in these domains.",
+      "education": "M.S. in Computer Science, Stanford University",
+      "interests": "My professional interests include Artificial Intelligence and Machine Learning. I am also passionate about mentoring aspiring tech professionals.",
+      "feedbacks": [
+        {
+          "name": "Sarah Smith",
+          "comment": "The insights and guidance I received were invaluable. Truly a game-changer for my professional development!"
+        },
+        {
+          "name": "Michael Brown",
+          "comment": "Exceptionally knowledgeable and approachable. The mentoring sessions were both informative and inspiring."
+        },
+        {
+          "name": "Emily Johnson",
+          "comment": "Very patient and thorough in their approach. I've learned so much and feel more confident in my skills."
+        },
+        {
+          "name": "Daniel Lee",
+          "comment": "Incredibly helpful and dedicated. I appreciate the practical advice and real-world examples used during our sessions."
+        },
+        {
+          "name": "Jessica Martinez",
+          "comment": "A fantastic mentor who really knows how to connect and communicate complex ideas in an understandable way."
+        }
+      ]
     }
   ]
 }
