@@ -1,0 +1,229 @@
+/* Apply a consistent box-sizing model to all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Set the base styling for the body, including font and background color */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+}
+
+/* Styling for the main heading */
+.heading {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 18px;
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Styling for filter and search containers */
+.filter-container,
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for labels */
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* Styling for input and select elements */
+input,
+select {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the cards container */
+#cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Styling for individual cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Styling for images inside cards */
+.images {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Styling for card titles */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Styling for description text */
+.description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Styling for details text (Country and Company) */
+.details {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+/* Styling for links */
+.links {
+    font-size: 14px;
+    color: #3498db;
+}
+
+/* Hover effect for links */
+.links:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the search button */
+#searchButton {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for the search button */
+#searchButton:hover {
+    background-color: #c3b7ea;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background: #478fa8;
+    font-size: 20px;
+    padding-bottom: 80px;
+}
+
+.container {
+    width: 100%;
+    font-size: 23px;
+}
+
+.name ul {
+    display: inline-flex;
+    margin: 40;
+}
+
+.name ul li {
+    list-style: none;
+    margin: 0 20px;
+    color: white;
+    cursor: pointer;
+    top: 40px;
+    left: 40px;
+    position: absolute;
+}
+
+.menu {
+    top: -10px;
+    right: 80px;
+    position: absolute;
+}
+
+.menu ul {
+    display: inline-flex;
+    margin: 50px;
+}
+
+.menu ul li {
+    list-style-type: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.menu ul li a {
+    color: white;
+}
+
+input[type="text"] {
+    width: 550px;
+    font-size: 15px;
+    padding: 10px;
+    border: 5px solid #c3b7ea;
+    border-radius: 15px;
+}
+
+button[type="submit"] {
+    font-size: 14px;
+    padding: 10px;
+    border: 6px solid #c3b7ea;
+    border-radius: 15px;
+}
+
+/* Styling for mentor details (Workplace, Location, and Price) */
+.mentor-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.location,
+.workplace,
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.fa-location-dot,
+.fa-briefcase,
+.fa-money-bill-wave {
+    color: #3498db;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.details {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+/* ... */
