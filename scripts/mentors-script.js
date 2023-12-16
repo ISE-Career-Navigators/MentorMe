@@ -1,6 +1,5 @@
 //http-server --cors
 
-const jsonFilePath = 'http://localhost:8080/mentors.json';
 let mentors = []; // Declare the mentors array globally
 let cardsContainer; // Declare cardsContainer globally
 
@@ -11,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('searchInput');
 
     // Fetch mentor data from the local JSON file
-    fetch(jsonFilePath)
+    fetch("http://localhost:3000/mentors")
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -19,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return response.json();
         })
         .then(mentorsData => {
-            mentors = mentorsData.mentors; // Update the global mentors variable
+            mentors = mentorsData; // Update the global mentors variable
             renderMentors(mentors);
 
             // Event listener for the search input to filter mentors
