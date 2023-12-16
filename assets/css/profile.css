@@ -1,6 +1,8 @@
 /* Overall */
 body {
     background-color: #F3F4F6;
+    display: flex;
+    justify-content: center;
 }
 
 h1,
@@ -15,40 +17,89 @@ p, label {
 }
 
 /*Welcome Section*/
+.user-profile-container {
+    background: linear-gradient(45deg, #003366, #29ABE2);
+    border-radius: 0px 50px;
+    margin: 50px;
+    padding-right: 20px;
+    width: 60%;
+}
+
 .welcome-section {
+    margin-bottom: 10px;
     display: flex;
     gap: 30px;
+    align-items: center;
 }
 
 #user-image {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
 #user-profile {
-    width: 60%;
-    margin: auto;
-    padding: 20px;
+    padding: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #F3F4F6;
+    border-radius: 0px 50px;
 }
 
 /*Changeable Personal Info*/
-#profile-form label,
-#profile-form input,
-#profile-form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
+.form-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 80px; /* Reasonable gap between columns */
 }
 
-#profile-form button {
-    width: auto;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+#profile-form label,
+#profile-form input,
+#update-button {
+    display: block;
+    width: 100%;
+}
+
+#profile-form h3 {
+    margin-top: 0;
+}
+
+#profile-form input {
+    border: 2px solid #003366;
+    border-radius: 4px;
+}
+
+input {
+    padding: 5px;
+    margin: 0;
+}
+
+input:focus {
+    background-color: #F3F4F6;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#update-button {
+    color: #FFFFFF;
+    background-color: #29ABE2;
+    padding: 10px 20px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#update-button:hover {
+    background-color: #4CAF50;
+    transform: scale(1.05);
+}
+
+#update-button:focus {
+    outline: none;
 }
 
 /*Sessions*/
@@ -77,4 +128,28 @@ p, label {
     color: #666;
     font-size: 0.9em;
     margin-bottom: 15px;
+}
+
+/*Packages*/
+.mentorship-package-card, 
+.events-attended-card,
+.saved-jobs-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.event-id {
+    font-size: 1.2em;
+    color: #003366; /* Deep blue */
+    margin-bottom: 8px;
+}
+
+.event-title {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
 }

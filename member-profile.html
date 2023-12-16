@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>User Profile</title>
     <link rel="stylesheet" href="assets/css/profile.css">
 </head>
+
 <body>
-    <div id="user-profile">
-        <div class="welcome-section">
-            <img id="user-image" src="" alt="User's Image">
-            <h2 id="welcome-message"></h2>
-        </div>
-        <form id="profile-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br>
+    <div class="user-profile-container">
+        <div id="user-profile">
+            <div class="welcome-section">
+                <img id="user-image" src="" alt="User's Image">
+                <h1 id="welcome-message"></h1>
+            </div>
+            <form id="profile-form">
+                <div class="form-div">
+                    <div class="first-half">
+                        <label for="name">
+                            <h3>Name:</h3>
+                        </label>
+                        <input type="text" id="name" name="name"><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="password"><br>
+                        <label for="email">
+                            <h3>Email:</h3>
+                        </label>
+                        <input type="email" id="email" name="password"><br>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password"><br>
+                        <label for="password">
+                            <h3>Password:</h3>
+                        </label>
+                        <input type="password" id="password" name="password"><br>
 
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username"><br>
+                        <label for="username">
+                            <h3>Username:</h3>
+                        </label>
+                        <input type="text" id="username" name="username"><br>
 
-            <label for="about">About:</label>
-            <input type="text" id="about" name="about"><br>
+                        <label for="about">
+                            <h3>About:</h3>
+                        </label>
+                        <input type="text" id="about" name="about"><br>
+                    </div>
+                    <div class="second-half">
+                        <label for="interests">
+                            <h3>Interests:</h3>
+                        </label>
+                        <input type="text" id="interests" name="interests"><br>
 
-            <label for="interests">Interests:</label>
-            <input type="text" id="interests" name="interests"><br>
+                        <label for="occupation">
+                            <h3>Occupation:</h3>
+                        </label>
+                        <input type="text" id="occupation" name="occupation"><br>
 
-            <label for="occupation">Occupation:</label>
-            <input type="text" id="occupation" name="occupation"><br>
-            
-            <label for="card-number">Card Number:</label>
-            <input type="text" id="card-number" name="card-number"><br>
-            <label for="card-cvc">Card CVC:</label>
-            <input type="password" id="card-cvc" name="card-cvc"><br>
-            <label for="card-date">Card Date:</label>
-            <input type="text" id="card-date" name="card-date"><br>
+                        <label for="card-number">
+                            <h3>Card Number:</h3>
+                        </label>
+                        <input type="text" id="card-number" name="card-number"><br>
+                        <label for="card-cvc">
+                            <h3>Card CVC:</h3>
+                        </label>
+                        <input type="password" id="card-cvc" name="card-cvc"><br>
+                        <label for="card-date">
+                            <h3>Card Date:</h3>
+                        </label>
+                        <input type="text" id="card-date" name="card-date"><br>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit" id="update-button">Update Profile</button>
+                </div>
+            </form>
 
             <h3>Previous Sessions</h3>
             <div id="sessions-previous"></div>
@@ -50,11 +82,10 @@
 
             <h3>Saved Jobs:</h3>
             <p id="saved-jobs"></p>
-
-            <button type="submit">Update Profile</button>
-        </form>
+        </div>
     </div>
 
     <script src="./scripts/profile.js"></script>
 </body>
+
 </html>

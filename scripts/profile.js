@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const userId = 1;
     fetchUserProfile(userId);
 
-    document.getElementById('profile-form').addEventListener('submit', function(e) {
+    document.getElementById('profile-form').addEventListener('submit', function (e) {
+        console.log("I am here");
         e.preventDefault();
         updateUserProfile(userId);
     });
@@ -31,9 +32,27 @@ function fetchUserProfile(userId) {
 
             // For the following fields, you might need to format the data appropriately
             formatSessions(userData.sessions);
-            // document.getElementById('m-packages').innerHTML = formatMPackages(userData.mPackages);
-            // document.getElementById('events-attended').innerHTML = formatEventsAttended(userData.eventsAttended);
-            // document.getElementById('saved-jobs').innerHTML = formatSavedJobs(userData.savedJobs);
+
+            // Populate mentorship packages
+            const packagesContainer = document.getElementById('m-packages');
+            userData.mPackages.forEach(package => {
+                const packageCard = createMentorshipPackageCard(package);
+                packagesContainer.appendChild(packageCard);
+            });
+
+            // Populate attended events
+            const eventsContainer = document.getElementById('events-attended');
+            userData.eventsAttended.forEach(event => {
+                const eventCard = createEventCard(event);
+                eventsContainer.appendChild(eventCard);
+            });
+            
+            // Populate saved jobs
+            const jobsContainer = document.getElementById('saved-jobs');
+            userData.savedJobs.forEach(job => {
+                const jobCard = createJobCard(job);
+                jobsContainer.appendChild(jobCard);
+            });
         })
         .catch(error => console.error('Error:', error));
 }
@@ -42,7 +61,20 @@ function updateUserProfile(userId) {
     const updatedData = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
-        // Retrieve other fields
+        password: document.getElementById('password').value,
+        username: document.getElementById('username').value,
+        about: document.getElementById('about').value,
+        interests: document.getElementById('interests').value.split(","),
+        occupation: document.getElementById('occupation').value,
+        card: {
+            number: document.getElementById('card-number').value,
+            cvc: document.getElementById('card-cvc').value,
+            expirationDate: document.getElementById('card-date').value,
+        },
+        sessions: document.getElementById('sessions-previous').value,
+        mPackages: document.getElementById('m-packages').value,
+        eventsAttended: document.getElementById('events-attended').value,
+        savedJobs: document.getElementById('saved-jobs').value
     };
 
     fetch(`http://localhost:3000/users/${userId}`, {
@@ -52,13 +84,13 @@ function updateUserProfile(userId) {
         },
         body: JSON.stringify(updatedData),
     })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Success:', data);
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-    });
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
 }
 
 function formatSessions(sessions) {
@@ -81,4 +113,88 @@ function formatSessions(sessions) {
         sessionDiv.appendChild(startDateEl);
         sessionDiv.appendChild(endDateEl);
     })
+}
+
+function createMentorshipPackageCard(package) {
+    const card = document.createElement('div');
+    card.className = 'mentorship-package-card';
+
+    const title = document.createElement('div');
+    title.className = 'package-title';
+    title.textContent = `Package ID: ${package.packageId}`;
+
+    // For linking to the mentor info page
+    const mentorLink = document.createElement('a');
+    mentorLink.src = "./mentor-info.html";
+    mentorLink.target = "_blank";
+    const mentorDiv = document.createElement('div');
+    mentorDiv.className = 'package-mentor';
+
+    const mentorId = package.mentorId;
+    console.log(mentorId);
+    let mentorName = "";
+    fetch(`http://localhost:3000/mentors/${mentorId}`)
+    .then(response => response.json())
+    .then(mentorData => {
+        mentorName = mentorData.name;
+        mentorDiv.textContent = `Mentor: ${mentorName}`;
+        // Add an event listener to the product div
+        mentorDiv.addEventListener('click', () => {
+            // Set the new URL when the mentor is clicked
+            window.open(`./mentor-info.html?mentorId=${package.mentorId}`, '_blank');
+        });
+    });
+    const details = document.createElement('div');
+    details.className = 'package-details';
+    details.textContent = `Resource Link: ${package.resourceLink}`;
+
+    const price = document.createElement('div');
+    price.className = 'package-price';
+    price.textContent = `Price: $${package.price}`;
+
+    card.appendChild(title);
+    card.appendChild(details);
+    card.appendChild(price);
+    card.appendChild(mentorLink);
+    mentorLink.appendChild(mentorDiv);
+    card.appendChild(details);
+    card.appendChild(price);
+
+    return card;
+}
+
+function createEventCard(event) {
+    const card = document.createElement('div');
+    card.className = 'events-attended-card';
+
+    const title = document.createElement('div');
+    title.className = 'event-id';
+    title.textContent = `Event ID: ${event.eventId}`;
+
+    const description = document.createElement('div');
+    description.className = 'event-title';
+    description.textContent = event.title;
+
+    card.appendChild(title);
+    card.appendChild(description);
+
+    return card;
+}
+
+function createJobCard(job) {
+    const card = document.createElement('div');
+    card.className = 'saved-jobs-card';
+
+    const title = document.createElement('div');
+    title.className = 'job-id';
+    title.textContent = `Job ID: ${job.jobId}`;
+
+    const description = document.createElement('div');
+    description.className = 'job-title';
+    description.textContent = job.title;
+
+    card.appendChild(title);
+    card.appendChild(description);
+
+    return card;
 }
