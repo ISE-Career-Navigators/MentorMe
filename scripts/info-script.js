@@ -14,7 +14,7 @@ function loadMentorProfile(mentorId) {
 
 // Function to render mentor profile
 function renderMentorProfile(mentor) {
-    document.getElementById('mentor-image').src = `assets/${mentor.image}`;
+    document.getElementById('mentor-image').src = `${mentor.image}`;
     document.getElementById('mentor-image').alt = mentor.name;
     document.getElementById('mentor-name').textContent = mentor.name;
     document.getElementById('mentor-occupation').textContent = mentor.title;

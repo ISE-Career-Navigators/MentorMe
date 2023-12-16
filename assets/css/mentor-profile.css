@@ -270,7 +270,7 @@ hr {
     background: linear-gradient(45deg, #003366, #29ABE2);
     border-radius: 0px 50px;
     margin: 20px;
-    width: 60%;
+    width: 80%;
     display: flex;
 }
 
@@ -281,7 +281,7 @@ hr {
     align-items: center;
 }
 
-#user-image {
+#mentor-image {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -292,7 +292,7 @@ hr {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #F3F4F6;
     border-radius: 0px 50px;
-    width: 85%;
+    width: 90%;
 }
 
 /*Changeable Personal Info*/
@@ -304,9 +304,15 @@ hr {
 
 #profile-form label,
 #profile-form input,
+#profile-form textarea,
 #update-button {
     display: block;
     width: 100%;
+}
+
+#expertise {
+    font-family: 'Roboto', sans-serif; 
+    height: 100px;
 }
 
 #profile-form h3 {
@@ -333,8 +339,7 @@ input:focus {
     margin-top: 30px;
 }
 
-#update-button,
-#mentor-button {
+#update-button {
     color: #FFFFFF;
     background-color: #29ABE2;
     padding: 10px 20px;
@@ -345,32 +350,24 @@ input:focus {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-#update-button:hover,
-#mentor-button:hover {
+#update-button:hover {
     background-color: #4CAF50;
     transform: scale(1.05);
 }
 
-#update-button:focus,
-#mentor-button:focus {
+#update-button:focus {
     outline: none;
 }
 
 /*Cards*/
-#sessions-previous,
-#m-packages,
-#events-attended,
-#saved-jobs {
+#sessions-previous {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
 
-#session-card,
-.mentorship-package-card, 
-.events-attended-card,
-.saved-jobs-card {
+#session-card {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 30px;
@@ -380,14 +377,10 @@ input:focus {
     transition: transform 0.3s ease; /* Smooth transition for the transform property */
 }
 
-#session-card:hover,
-.mentorship-package-card:hover,
-.events-attended-card:hover,
-.saved-jobs-card:hover {
+#session-card:hover {
     transform: scale(1.05); /* Slightly enlarge the card */
 }
 
-.activities,
 .mentor-activities {
     display: flex;
     justify-content: space-around;

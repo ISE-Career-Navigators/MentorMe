@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchUserProfile(userId);
 
     document.getElementById('profile-form').addEventListener('submit', function (e) {
-        console.log("I am here");
         e.preventDefault();
         updateUserProfile(userId);
     });
@@ -98,20 +97,16 @@ function formatSessions(sessions) {
         const sessionDiv = document.createElement('div');
         sessionDiv.id = "session-card";
 
-        const titleEl = document.createElement('h2');
-        titleEl.textContent = session.title;
+        const titleEl = document.createElement('h4');
+        titleEl.innerHTML = session.title;
 
-        const startDateEl = document.createElement('h3');
-        startDateEl.textContent = session.startDate;
-
-        const endDateEl = document.createElement('h3');
-        endDateEl.textContent = session.endDate;
+        const date = document.createElement('h4');
+        date.textContent = `Date: ${session.date}`;
 
         const sessionsDiv = document.getElementById('sessions-previous');
         sessionsDiv.appendChild(sessionDiv);
         sessionDiv.appendChild(titleEl);
-        sessionDiv.appendChild(startDateEl);
-        sessionDiv.appendChild(endDateEl);
+        sessionDiv.appendChild(date);
     })
 }
 
@@ -119,7 +114,7 @@ function createMentorshipPackageCard(package) {
     const card = document.createElement('div');
     card.className = 'mentorship-package-card';
 
-    const title = document.createElement('div');
+    const title = document.createElement('h4');
     title.className = 'package-title';
     title.textContent = `Package ID: ${package.packageId}`;
 
@@ -127,7 +122,7 @@ function createMentorshipPackageCard(package) {
     const mentorLink = document.createElement('a');
     mentorLink.src = "./mentor-info.html";
     mentorLink.target = "_blank";
-    const mentorDiv = document.createElement('div');
+    const mentorDiv = document.createElement('h4');
     mentorDiv.className = 'package-mentor';
 
     const mentorId = package.mentorId;
@@ -137,18 +132,19 @@ function createMentorshipPackageCard(package) {
     .then(response => response.json())
     .then(mentorData => {
         mentorName = mentorData.name;
-        mentorDiv.textContent = `Mentor: ${mentorName}`;
+        mentorDiv.innerHTML = `Mentor: <button id="mentor-button">${mentorName}</button>`;
         // Add an event listener to the product div
         mentorDiv.addEventListener('click', () => {
             // Set the new URL when the mentor is clicked
             window.open(`./mentor-info.html?mentorId=${package.mentorId}`, '_blank');
         });
     });
-    const details = document.createElement('div');
-    details.className = 'package-details';
-    details.textContent = `Resource Link: ${package.resourceLink}`;
 
-    const price = document.createElement('div');
+    const details = document.createElement('h4');
+    details.className = 'package-details';
+    details.innerHTML = `<a href=${package.resourceLink} target="_blank">Resource Link</a>`;
+
+    const price = document.createElement('h4');
     price.className = 'package-price';
     price.textContent = `Price: $${package.price}`;
 
@@ -167,11 +163,11 @@ function createEventCard(event) {
     const card = document.createElement('div');
     card.className = 'events-attended-card';
 
-    const title = document.createElement('div');
+    const title = document.createElement('h4');
     title.className = 'event-id';
     title.textContent = `Event ID: ${event.eventId}`;
 
-    const description = document.createElement('div');
+    const description = document.createElement('h4');
     description.className = 'event-title';
     description.textContent = event.title;
 
@@ -185,11 +181,11 @@ function createJobCard(job) {
     const card = document.createElement('div');
     card.className = 'saved-jobs-card';
 
-    const title = document.createElement('div');
+    const title = document.createElement('h4');
     title.className = 'job-id';
     title.textContent = `Job ID: ${job.jobId}`;
 
-    const description = document.createElement('div');
+    const description = document.createElement('h4');
     description.className = 'job-title';
     description.textContent = job.title;
 
