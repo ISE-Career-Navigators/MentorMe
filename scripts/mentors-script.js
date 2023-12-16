@@ -43,16 +43,27 @@ function filterMentors(mentorsToFilter, searchTerm) {
     );
 }
 
-// Function to render mentor cards based on the provided array of mentors
 function renderMentors(mentorsToRender) {
     const data = mentorsToRender.map(mentor => `
         <div class="card" onclick="openMentorDetailPage(${mentor.id})">
             <h1 class="title">${mentor.name}</h1>
             <img src="${mentor.image}" alt="${mentor.name}" class="images">
             <p class="title">${mentor.title}</p>
-            <p class="description">${mentor.description}</p>
-            ${mentor.country ? `<p class="details">${mentor.country}</p>` : ''}
-            ${mentor.company ? `<p class="details">${mentor.company}</p>` : ''}
+            <div class="mentor-details">
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="details">${mentor.location}</p>
+                </div>
+                <div class="workplace">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <p class="details">${mentor.workplace}</p>
+                </div>
+                <div class="price">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <p class="details">${mentor.price}</p>
+                </div>
+            </div>
+            ${mentor.description ? `<p class="description">${mentor.description}</p>` : ''}
             <p class="links">
                 <a href="${mentor.linkedin}" target="_blank">LinkedIn</a> |
                 <a href="${mentor.github}" target="_blank">GitHub</a>

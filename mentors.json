@@ -7,7 +7,11 @@
       "description": "Experienced in designing, implementing, and maintaining IT systems for optimal performance and efficiency.",
       "image": "assets/images/alice_johnson.jpeg",
       "linkedin": "https://www.linkedin.com/in/alicejohnson",
-      "github": "https://github.com/alicejohnson"
+      "github": "https://github.com/alicejohnson",      
+      "rating": 4.0,
+      "workplace": "NextGen Innovation",
+      "location": "San Francisco, CA, USA",
+      "price": "100 AZN"
     },
     {
       "id": 2,
@@ -16,7 +20,11 @@
       "description": "Specialized in architecting comprehensive IT solutions to meet business requirements and enhance organizational capabilities.",
       "image": "assets/images/bob_anderson.jpeg",
       "linkedin": "https://www.linkedin.com/in/bobanderson",
-      "github": "https://github.com/bobanderson"
+      "github": "https://github.com/bobanderson",
+      "rating": 4.0,
+      "workplace": "BlueTech Solutions",
+      "location": "Berlin, Germany",
+      "price": "100 AZN"
     },
     {
       "id": 3,
@@ -25,7 +33,11 @@
       "description": "Data scientist with a focus on IT-related datasets, skilled in extracting valuable insights to drive informed decision-making.",
       "image": "assets/images/charlie_martinez.jpg",
       "linkedin": "https://www.linkedin.com/in/charliemartinez",
-      "github": "https://github.com/charliemartinez"
+      "github": "https://github.com/charliemartinez",
+      "rating": 4.0,
+      "workplace": "Quantum Computing Inc.",
+      "location": "Tokyo, Japan",
+      "price": "100 AZN"
     },
     {
       "id": 4,
@@ -34,7 +46,11 @@
       "description": "Frontend developer specializing in creating user-friendly and visually appealing IT-related interfaces with cutting-edge technologies.",
       "image": "assets/images/diana_white.jpg",
       "linkedin": "https://www.linkedin.com/in/dianawhite",
-      "github": "https://github.com/dianawhite"
+      "github": "https://github.com/dianawhite",
+      "rating": 4.0,
+      "workplace": "Greenfield Networks",
+      "location": "London, UK",
+      "price": "100 AZN"
     },
     {
       "id": 5,
@@ -43,7 +59,11 @@
       "description": "Product manager with a focus on IT product development, experienced in guiding projects from conception to successful deployment.",
       "image": "assets/images/ethan_davis.jpg",
       "linkedin": "https://www.linkedin.com/in/ethandavis",
-      "github": "https://github.com/ethandavis"
+      "github": "https://github.com/ethandavis",
+      "rating": 4.0,
+      "workplace": "Elite Software Group",
+      "location": "Sydney, Australia",
+      "price": "100 AZN"
     },
     {
       "id": 6,
@@ -52,7 +72,11 @@
       "description": "Expert in cybersecurity, specializing in analyzing and enhancing the security posture of IT systems and networks.",
       "image": "assets/images/fiona_lee.jpeg",
       "linkedin": "https://www.linkedin.com/in/fionalee",
-      "github": "https://github.com/fionalee"
+      "github": "https://github.com/fionalee",
+      "rating": 4.0,
+      "workplace": "Virtuality Labs",
+      "location": "New York, NY, USA",
+      "price": "100 AZN"
     },
     {
       "id": 7,
@@ -61,7 +85,11 @@
       "description": "Cloud architect with a focus on designing scalable and reliable IT solutions in cloud environments.",
       "image": "assets/images/george_taylor.jpeg",
       "linkedin": "https://www.linkedin.com/in/georgetaylor",
-      "github": "https://github.com/georgetaylor"
+      "github": "https://github.com/georgetaylor",
+      "rating": 4.0,
+      "workplace": "Orbital Systems",
+      "location": "Toronto, Canada",
+      "price": "100 AZN"
     },
     {
       "id": 8,
@@ -70,7 +98,11 @@
       "description": "Passionate about creating intuitive and visually appealing user experiences for IT applications and websites.",
       "image": "assets/images/hannah_parker.jpeg",
       "linkedin": "https://www.linkedin.com/in/hannahparker",
-      "github": "https://github.com/hannahparker"
+      "github": "https://github.com/hannahparker",
+      "rating": 4.0,
+      "workplace": "FutureScape Technologies",
+      "location": "Singapore",
+      "price": "100 AZN"
     },
     {
       "id": 9,
@@ -79,7 +111,11 @@
       "description": "DevOps engineer specializing in streamlining IT development and operations processes for improved efficiency and collaboration.",
       "image": "assets/images/ian_rodriguez.png",
       "linkedin": "https://www.linkedin.com/in/ianrodriguez",
-      "github": "https://github.com/ianrodriguez"
+      "github": "https://github.com/ianrodriguez",
+      "rating": 4.0,
+      "workplace": "CyberDynamics",
+      "location": "Bangalore, India",
+      "price": "100 AZN"
     },
     {
       "id": 10,
@@ -88,7 +124,11 @@
       "description": "Mobile app developer with expertise in creating innovative and user-friendly IT applications for iOS and Android platforms.",
       "image": "assets/images/jessica_kim.jpeg",
       "linkedin": "https://www.linkedin.com/in/jessicakim",
-      "github": "https://github.com/jessicakim"
+      "github": "https://github.com/jessicakim",
+      "rating": 4.0,
+      "workplace": "SolarStream Technologies",
+      "location": "Stockholm, Sweden",
+      "price": "100 AZN"
     }
   ]
 }
