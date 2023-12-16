@@ -449,3 +449,65 @@ hr {
         left: 100px;
     }
 }
+
+body .top-sale, body .last-news {
+    min-height: 600px;
+    background-position: center center;
+    background-attachment: fixed;
+    margin-bottom: 60px; 
+    margin-top: 50px;
+}
+
+body .top-sale .top-sale-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    padding-right: 20px; 
+    padding-left: 20px;
+}
+
+body .top-sale .top-sale-main .image-container {
+    flex-shrink: 0;
+    margin-right: -115px;
+    margin-left: 100px;
+}
+
+body .top-sale .top-sale-main img {
+    width: 100%;
+}
+
+body .top-sale .top-sale-main .text-container {
+    flex-grow: 1;
+    margin-bottom: 80px;
+}
+
+body .top-sale .top-sale-main h3 {
+    color: #32819b;
+    font-size: 30px;
+    padding-top: 120px;
+}
+
+body .top-sale .top-sale-main h1 {
+    font-size: 45px;
+    color: #767676;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+}
+
+body .top-sale .top-sale-main .button {
+    background-color: #fff;
+    color: #32819b;
+    border-radius: 50px;
+    font-size: 24px;
+    padding: 12px 24px;
+    transition: 0.3s all; 
+    margin-top: 20px;
+    display: inline-block;
+}
+
+body .top-sale .top-sale-main .button:hover {
+    background-color: #fff;
+    color: #000; 
+}
