@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html, body{
+    overflow-x:hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-container {
+    background-color: #e5f5ff;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background: #fff;
+    border-radius: 50px;
+    height: 65px;
+    box-shadow: 0 25px 20px -20px #e5f5ff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 35px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+    position: relative;
+    z-index: 2;
+}
+
+nav ul li a::after {
+    content: '';
+    background-color: #e5f5ff;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+
+nav ul li:hover a::after {
+    top: 50%;
+    opacity: 1;
+}
+
+.container{
+    width: 100%;
+    font-size: 23px;
+}
+
+.name ul{
+    display: inline-flex;
+    margin: 40;
+}
+
+.name ul li{
+    list-style: none;
+    margin: 0 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu{
+    top: -10px;
+    right: 80px;
+    position: absolute;
+}
+
+.menu ul{
+    display: inline-flex;
+    margin: 50px;
+}
+
+.menu ul li {
+    list-style-type: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.menu ul li a{
+    color: white;
+}
+
+.login-btn{
+    color:#000;
+    text-decoration: none;
+}
+
+.welcome{
+    color: rgb(14, 0, 96);
+    margin: 60px;
+    margin-left: 50px;
+}
+
+.banner{
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+    padding-top: 96px;
+    color: #fff;
+}
+  
+input[type="text"] {
+    width: 550px;
+    font-size: 15px; 
+    padding: 10px; 
+    border: 5px solid #c3b7ea; 
+    border-radius: 15px; 
+}
+  
+button[type="submit"] {
+    font-size: 14px;
+    padding: 10px; 
+    border: 3px solid #c3b7ea;
+    border-radius: 15px; 
+    margin-right: 55px;
+}
+
+.secondpage {
+    width: 50%; 
+    display: inline-block;
+    margin: 50px 20px; 
+}
+
+.secondpage h2 {
+    margin-right: 30px;
+}
+
+.text{
+    color: black;
+    margin: 160px;
+    margin-left: 50px;
+    margin-bottom: 5%;
+}
+
+.cards-container {
+    margin: 28px;
+    display: flex;
+    padding: 10px;
+    margin-top: 5%;
+    margin-left: 295px;
+    width: 115%;
+}
+
+.card {
+    margin: 20px; 
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 8px #967ced;
+    border-radius: 10px;
+}
+  
+.card h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #32819b;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.5;
+    color:#000;
+    margin: 10px;
+}
+  
+.card button, .card a {
+    display: inline-block;
+    padding: 5px;
+    border: 0px solid #ddd;
+    border-radius: 8px;
+    background-color: #e6e0fe;
+    color: #333;
+    margin-top: 10px;
+    text-decoration: none;
+    margin: 0 auto;
+}
+  
+.card button:hover,
+.card a:hover {
+    background-color: #b69ef3;
+} 
+  
+.card:hover{
+    background-color: #c9d5ff; 
+}
+
+.thirdpage {
+    padding-left: 50px;
+}
+
+.first, .second, .third {
+    display: inline-block;
+    margin-right: 20px; 
+    padding-left: 135px;
+    padding-top: 40px;
+}
+
+.first img, .second img, .third img {
+    width: 180px;
+    height: 200px;
+}
+
+.first h3, .second h3, .third h3 {
+    padding-top: 20px;
+}
+
+.first p, .second p, .third p {
+    padding-top: 20px;
+    width: 186px;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    color: grey;
+    background-color: #e5f5ff;
+    padding: 40px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+footer .info {
+    width: 83%;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 13%;
+    padding: 10px;
+}
+
+.col:nth-child(2) {
+    flex-basis: 15%;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+    margin-left: -30px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    position: relative;
+    margin-left: 0px;
+    margin-top: 40px;
+}
+
+form .far {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input {
+    flex-grow: 1;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    position: relative;
+}
+
+.input-line {
+    width: 80%;
+    height: 2px;
+    background: #ccc; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+form button .fas {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons {
+    margin-top: -20px;
+}
+
+.social-icons .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100px;
+    }
+}
