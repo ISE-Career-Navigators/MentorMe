@@ -184,6 +184,49 @@ button[type="submit"] {
     font-size: 30px;
 }
 
+.second img {
+    width: 180px;
+    height: 200px;
+    border-radius: 50%; 
+    overflow: hidden; 
+}
+
+.second {
+    text-align: center;
+}
+
+.second h3,
+.second p {
+    margin-top: 10px;
+}
+
+.second img {
+    border: 5px solid #fff; 
+    box-shadow: 0 0 8px #967ced;
+}
+
+.second .circle-container {
+    width: 200px;
+    height: 195px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #e5f5ff; 
+    box-shadow: 0 0 8px #967ced; 
+}
+
+.second .rounded-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.second h3,
+.second p {
+    margin-top: 10px;
+    text-align: center; 
+}
+
 .text{
     color: #777;
     margin: 15px;
@@ -262,9 +305,10 @@ button[type="submit"] {
 }
 
 .first img, .second img, .third img {
-    width: 180px;
+    width: 200px;
     height: 200px;
-    margin-left: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #967ced; 
 }
 
 .first h3, .second h3, .third h3 {
@@ -450,7 +494,7 @@ hr {
     }
 }
 
-body .top-sale, body .last-news {
+.top-sign, body .last-news {
     min-height: 600px;
     background-position: center center;
     background-attachment: fixed;
@@ -458,7 +502,7 @@ body .top-sale, body .last-news {
     margin-top: 50px;
 }
 
-body .top-sale .top-sale-main {
+.top-sign .top-sign-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -468,37 +512,37 @@ body .top-sale .top-sale-main {
     padding-left: 20px;
 }
 
-body .top-sale .top-sale-main .image-container {
+.top-sign .top-sign-main .image-container {
     flex-shrink: 0;
     margin-right: -115px;
     margin-left: 100px;
 }
 
-body .top-sale .top-sale-main img {
+.top-sign .top-sign-main img {
     width: 100%;
 }
 
-body .top-sale .top-sale-main .text-container {
+.top-sign .top-sign-main .text-container {
     flex-grow: 1;
     margin-bottom: 80px;
 }
 
-body .top-sale .top-sale-main h3 {
+.top-sign .top-sign-main h3 {
     color: #32819b;
     font-size: 30px;
     padding-top: 120px;
 }
 
-body .top-sale .top-sale-main h1 {
+.top-sign .top-sign-main h1 {
     font-size: 45px;
     color: #767676;
     letter-spacing: 4px;
     margin-bottom: 50px;
 }
 
-body .top-sale .top-sale-main .button {
+.top-sign .top-sign-main .button {
     background-color: #fff;
-    color: #32819b;
+    color: grey;
     border-radius: 50px;
     font-size: 24px;
     padding: 12px 24px;
@@ -507,7 +551,42 @@ body .top-sale .top-sale-main .button {
     display: inline-block;
 }
 
-body .top-sale .top-sale-main .button:hover {
-    background-color: #fff;
-    color: #000; 
+.top-sign .top-sign-main .button:hover {
+    background-color: #32819b;
+    color: #fff; 
+}
+
+.collabs {
+    margin: 60px 0; 
+}
+  
+.collabs .collabs-left-img {
+    width: 100%; 
+}
+  
+.collabs .collabs-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 125px;
+}
+  
+.collabs .collabs-right h5 {
+    font-size: 14px;
+    letter-spacing: 1.6px;
+    color: #32819b;
+    font-weight: 400;
+    font-family: "Pacifico", Sans-serif;
+    margin: 14px 0; 
+}
+  
+.collabs .collabs-right h2 {
+    margin-bottom: 40px; 
+}
+  
+body .collabs .collabs-right .collabs-right-text {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px; 
+    padding-left: 20px;
 }
