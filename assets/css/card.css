@@ -11,13 +11,83 @@
   transition: all .2s linear;
 }
 
+body {
+  background-color: #f4f4f4; 
+}
+
+.nav-container {
+  background-color: #e5f5ff;
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 90px; 
+}
+
+.nav-container .logo img {
+  width: 100px;
+  margin-right: 10px; 
+  margin-top: 23px;
+}
+
+nav {
+  background: #fff;
+  border-radius: 50px;
+  height: 65px;
+  box-shadow: 0 25px 20px -20px #e5f5ff;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 35px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #777;
+  position: relative;
+  z-index: 2;
+}
+
+nav ul li a::after {
+  content: '';
+  background-color: #e5f5ff;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+  transition: top 0.5s, opacity 0.5s;
+}
+
+nav ul li:hover a::after {
+  top: 50%;
+  opacity: 1;
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 25px;
+  margin-top: -50px;
   min-height: 100vh;
-  background-color: #e5f5ff;
+  /* background-color: #e5f5ff; */
 }
 
 .container form {
@@ -73,6 +143,15 @@
   gap: 15px;
 }
 
+.container form .row .col #expYear {
+  width: calc(100% - 10px); /* Adjust the width as needed */
+  border: 2px solid #3498db;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+  border-radius: 5px;
+}
+
 .container form .row .col .flex .inputBox {
   margin-top: 5px;
 }
@@ -96,6 +175,7 @@
   transition: background 0.3s ease; 
 }
 
+
 .container form .submit-btn:hover {
   background: #2ecc71; 
 }
@@ -113,4 +193,177 @@
 .container form .row .col .inputBox .flex select:focus,
 .container form .row .col .inputBox .flex input:focus {
     border: 1px solid #000; 
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  color: grey;
+  background-color: #e5f5ff;
+  padding: 40px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+  position: relative;
+}
+
+footer .info {
+  width: 83%;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 13%;
+  padding: 10px;
+}
+
+.col:nth-child(2) {
+  flex-basis: 15%;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 30px;
+}
+
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
+  margin-left: -30px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: grey;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  position: relative;
+  margin-left: 3px;
+  width: 26%;
+  margin-top: 35px;
+}
+
+.footer .far {
+  font-size: 18px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.footer input {
+  flex-grow: 1;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+  padding: 10px;
+  position: relative;
+  margin-top: -10px; 
+}
+
+.input-line {
+  width: 300%;
+  height: 2px;
+  background: #ccc; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer button {
+  background: transparent;
+  border: 3px solid #c3b7ea;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 35%;
+  margin-bottom: 5px;
+}
+
+.footer button .fas {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.social-icons {
+  margin-top: -20px;
+}
+
+.social-icons .fab {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.underline {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  overflow: hidden;
+}
+
+.underline span {
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+  0%{
+      left: -20px;
+  }
+  100%{
+      left: 100px;
+  }
 }
