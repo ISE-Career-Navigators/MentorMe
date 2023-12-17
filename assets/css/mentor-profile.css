@@ -1,0 +1,391 @@
+/* Overall */
+body {
+    background-color: #F3F4F6;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, label {
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+}
+
+html, body{
+    overflow-x:hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Navigation Bar*/
+.nav-container {
+    background-color: #e5f5ff;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background: #fff;
+    border-radius: 50px;
+    height: 65px;
+    margin-left: 475px;
+    box-shadow: 0 25px 20px -20px #e5f5ff;
+}
+
+.nav-container .logo img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 35px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+    position: relative;
+    z-index: 2;
+}
+
+nav ul li a::after {
+    content: '';
+    background-color: #e5f5ff;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+
+nav ul li:hover a::after {
+    top: 50%;
+    opacity: 1;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    bottom: 0;
+    color: grey;
+    background-color: #e5f5ff;
+    padding: 40px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+    position: relative;
+}
+
+footer .info {
+    width: 83%;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 13%;
+    padding: 10px;
+}
+
+.col:nth-child(2) {
+    flex-basis: 15%;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+    margin-left: -30px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    position: relative;
+    margin-left: 3px;
+    width: 26%;
+    margin-top: 35px;
+}
+
+.footer .far {
+    font-size: 18px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.footer input {
+    flex-grow: 1;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    position: relative;
+    margin-top: -10px; 
+}
+
+.input-line {
+    width: 250%;
+    height: 2px;
+    background: #ccc; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer button {
+    background: transparent;
+    border: 3px solid #c3b7ea;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.footer button .fas {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons {
+    margin-top: -20px;
+}
+
+.social-icons .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100px;
+    }
+}
+
+/*Welcome Section*/
+.user-profile-container {
+    background: linear-gradient(45deg, #003366, #29ABE2);
+    border-radius: 0px 50px;
+    margin: 20px;
+    width: 80%;
+    display: flex;
+}
+
+.welcome-section {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+#mentor-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user-profile {
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #F3F4F6;
+    border-radius: 0px 50px;
+    width: 90%;
+}
+
+/*Changeable Personal Info*/
+.form-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 80px; /* Reasonable gap between columns */
+}
+
+#profile-form label,
+#profile-form input,
+#profile-form textarea,
+#update-button {
+    display: block;
+    width: 100%;
+}
+
+#expertise {
+    font-family: 'Roboto', sans-serif; 
+    height: 100px;
+}
+
+#profile-form h3 {
+    margin-top: 0;
+}
+
+#profile-form input {
+    border: 2px solid #003366;
+    border-radius: 4px;
+}
+
+input {
+    padding: 5px;
+    margin: 0;
+}
+
+input:focus {
+    background-color: #F3F4F6;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#update-button {
+    color: #FFFFFF;
+    background-color: #29ABE2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#update-button:hover {
+    background-color: #4CAF50;
+    transform: scale(1.05);
+}
+
+#update-button:focus {
+    outline: none;
+}
+
+/*Cards*/
+#sessions-previous {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#session-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+}
+
+#session-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+}
+
+.mentor-activities {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards h3 {
+    text-align: center;
+}
