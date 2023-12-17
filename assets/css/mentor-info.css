@@ -1,15 +1,12 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 body {
     background-color: #F3F4F6;
 }
 
-h1,
-h2,
-h3 {
-    font-family: 'Montserrat', sans-serif;
-}
-
 p {
-    font-family: 'Roboto', sans-serif;
     color: #333333;
 }
 
