@@ -100,7 +100,7 @@ function renderMentors(mentorsToRender) {
 
 // Function to open the mentor detail page for a given mentorId
 function openMentorDetailPage(mentorId) {
-    window.location.href = `mentor.html?id=${mentorId}`;
+    window.location.href = `mentor-info.html?mentorId=${mentorId}`;
 }
 
 // Get reference to the search input and search button

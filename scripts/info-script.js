@@ -1,9 +1,12 @@
 // Get the mentor ID from the URL
 const urlParams = new URLSearchParams(window.location.search);
 const mentorId = urlParams.get('mentorId');
+console.log(mentorId);
 
 // Function to fetch mentor data
 function loadMentorProfile(mentorId) {
+    console.log(mentorId);
+    console.log(`http://localhost:3000/mentors/${mentorId}`);
     fetch(`http://localhost:3000/mentors/${mentorId}`)
         .then(response => response.json())
         .then(mentorData => {
