@@ -3,8 +3,8 @@
 
 <head>
     <title>User Profile</title>
-    <link rel="stylesheet" href="assets/css/profile.css">
-    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png" />
+    <link rel="stylesheet" href="assets/css/mentor-profile.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png" />
 </head>
 
 <body>
@@ -14,10 +14,10 @@
         </div>
         <nav>
             <ul>
-                <li><a href="home.html" target="_blank">Home</a></li>
-                <li><a href="mentors.html" target="_blank">Mentors</a></li>
-                <li><a href="events.html" target="_blank">Events</a></li>
-                <li><a href="login.html" target="_blank">Login</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="mentors.html">Mentors</a></li>
+                <li><a href="resources">Resources</a></li>
+                <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
     </div>
@@ -26,7 +26,7 @@
         <div class="user-profile-container">
             <div class="user-profile">
                 <div class="welcome-section">
-                    <img id="user-image" src="" alt="User's Image">
+                    <img id="mentor-image" src="" alt="Mentor's Image">
                     <h1 id="welcome-message"></h1>
                 </div>
                 <form id="profile-form">
@@ -52,21 +52,56 @@
                             </label>
                             <input type="text" id="username" name="username"><br>
 
-                            <label for="about">
-                                <h3>About:</h3>
+                            <label for="description">
+                                <h3>Description:</h3>
                             </label>
-                            <input type="text" id="about" name="about"><br>
+                            <input type="text" id="description" name="description"><br>
+
+                            <label for="workplace">
+                                <h3>Workplace:</h3>
+                            </label>
+                            <input type="text" id="workplace" name="workplace"><br>
+
+                            <label for="location">
+                                <h3>Location:</h3>
+                            </label>
+                            <input type="text" id="location" name="location"><br>
+
+                            <label for="expertise">
+                                <h3>Expertise:</h3>
+                            </label>
+                            <textarea id="expertise" name="expertise" rows="2"></textarea>
                         </div>
                         <div class="second-half">
+                            <label for="price">
+                                <h3>Price:</h3>
+                            </label>
+                            <input type="text" id="price" name="price"><br>
+
+                            <label for="education">
+                                <h3>Education:</h3>
+                            </label>
+
+                            <input type="text" id="education" name="education"><br>
+                            <label for="linkedin">
+                                <h3>LinkedIn:</h3>
+                            </label>
+                            <input type="text" id="linkedin" name="linkedin"><br>
+
+                            <label for="github">
+                                <h3>GitHub:</h3>
+                            </label>
+                            <input type="text" id="github" name="github"><br>
+
                             <label for="interests">
                                 <h3>Interests:</h3>
                             </label>
                             <input type="text" id="interests" name="interests"><br>
 
-                            <label for="occupation">
-                                <h3>Occupation:</h3>
+                            <label for="title">
+                                <h3>Title:</h3>
                             </label>
-                            <input type="text" id="occupation" name="occupation"><br>
+                            <input type="text" id="title" name="title"><br>
 
                             <label for="card-number">
                                 <h3>Card Number:</h3>
@@ -86,35 +121,11 @@
                         <button type="submit" id="update-button">Update Profile</button>
                     </div>
                 </form>
-            </div>
-        </div>
-        <div class="user-profile-container">
-            <div class="user-profile">
-                <div class="cards">
 
-                    <div class="mentor-activities">
-                        <div class="sessions">
-                            <h3>Previous Sessions</h3>
-                            <div id="sessions-previous"></div>
-                        </div>
-
-                        <div class="packages">
-                            <h3>Mentorship Packages:</h3>
-                            <p id="m-packages"></p>
-                        </div>
-                    </div>
-
-                    <div class="activities">
-                        <div class="events">
-                            <h3>Attended Events:</h3>
-                            <p id="events-attended"></p>
-                        </div>
-
-                        <div class="jobs">
-                            <h3>Saved Jobs:</h3>
-                            <p id="saved-jobs"></p>
-                        </div>
-                    </div>
+                
+                <div class="sessions">
+                    <h3>Previous Sessions</h3>
+                    <div id="sessions-previous"></div>
                 </div>
             </div>
         </div>
@@ -140,10 +151,10 @@
                 <h3>Links <div class="underline"><span></span></div>
                 </h3>
                 <ul>
-                    <li><a href="home.html" target="_blank">Home</a></li>
-                    <li><a href="mentors.html" target="_blank">Mentors</a></li>
-                    <li><a href="events.html" target="_blank">Events</a></li>
-                    <li><a href="login.html" target="_blank">Login</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="mentors.html">Mentors</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="col">
@@ -167,7 +178,7 @@
         <p class="copyright">Mentor Me © 2023 - All Rights Reserved</p>
     </footer>
 
-    <script src="./scripts/profile.js"></script>
+    <script src="./scripts/mentor-profile.js"></script>
     <script src="https://kit.fontawesome.com/8e25129cf2.js" crossorigin="anonymous"></script>
 </body>
 

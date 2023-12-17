@@ -90,7 +90,7 @@ function renderMentors(mentorsToRender) {
             <p class="links">
                 <a href="${mentor.linkedin}" target="_blank">LinkedIn</a> |
                 <a href="${mentor.github}" target="_blank">GitHub</a> |
-                <a href="mentor-info.html?id=${mentor.id}" class="see-more">See More</a> <!-- Updated See More link -->
+                <a href="mentor-info.html?mentorId=${mentor.id}" class="see-more">See More</a> <!-- Updated See More link -->
             </p>
         </div>`;
     }).join('');
