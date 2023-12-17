@@ -87,7 +87,6 @@ nav ul li:hover a::after {
   padding: 25px;
   margin-top: -50px;
   min-height: 100vh;
-  /* background-color: #e5f5ff; */
 }
 
 .container form {
@@ -143,8 +142,8 @@ nav ul li:hover a::after {
   gap: 15px;
 }
 
-.container form .row .col #expYear {
-  width: calc(100% - 10px); /* Adjust the width as needed */
+.container .flex-exp{
+  width: calc(100% - 10px); 
   border: 2px solid #3498db;
   padding: 10px 15px;
   font-size: 15px;
