@@ -21,21 +21,20 @@ body {
   height: 12vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 90px; 
-}
-
-.nav-container .logo img {
-  width: 100px;
-  margin-right: 10px; 
-  margin-top: 23px;
+  justify-content: center;
 }
 
 nav {
   background: #fff;
   border-radius: 50px;
   height: 65px;
+  margin-left: 473px;
   box-shadow: 0 25px 20px -20px #e5f5ff;
+}
+
+.nav-container .logo img {
+  width: 100px;
+  margin-top: 25px;
 }
 
 nav ul {
@@ -78,6 +77,35 @@ nav ul li a::after {
 nav ul li:hover a::after {
   top: 50%;
   opacity: 1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 .container {

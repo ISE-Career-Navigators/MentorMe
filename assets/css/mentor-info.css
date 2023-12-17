@@ -147,7 +147,7 @@ footer {
 }
 
 footer .info {
-    width: 83%;
+    width: 150%;
 }
 
 .row {
@@ -294,6 +294,18 @@ hr {
     top: 0;
     left: 10px;
     animation: moving 2s linear infinite;
+}
+
+.linkcls {
+    margin-left: 56px;
+}
+
+.linkclass {
+    margin-left: -30px;
+}
+
+.callul {
+    margin-left: -40px;
 }
 
 @keyframes moving {

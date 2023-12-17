@@ -57,7 +57,7 @@ function renderMentorProfile(mentor) {
     document.getElementById('mentor-about').textContent = mentor.description;
     document.getElementById('mentor-linkedin').href = mentor.linkedin;
     document.getElementById('mentor-github').href = mentor.github;
-    document.getElementById('book-appointment').textContent = `Book for ${mentor.price}`;
+    document.getElementById('book-appointment').innerHTML = `<a href="card.html" target="_blank">Book for ${mentor.price}</a>`;
 
     // Add event listener for booking appointment
     document.getElementById('book-appointment').addEventListener('click', () => {
