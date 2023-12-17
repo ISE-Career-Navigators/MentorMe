@@ -9,74 +9,6 @@ main {
     justify-content: center;
 }
 
-a {
-    text-decoration: none;
-}
-
-.nav-container {
-    background-color: #e5f5ff;
-    width: 100%;
-    height: 12vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-nav {
-    background: #fff;
-    border-radius: 50px;
-    height: 65px;
-    margin-left: 475px;
-    box-shadow: 0 25px 20px -20px #e5f5ff;
-}
-
-.nav-container .logo img {
-    width: 100%;
-    margin-top: 20px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 35px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #777;
-    position: relative;
-    z-index: 2;
-}
-
-nav ul li a::after {
-    content: '';
-    background-color: #e5f5ff;
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    opacity: 0;
-    transition: top 0.5s, opacity 0.5s;
-}
-
-nav ul li:hover a::after {
-    top: 50%;
-    opacity: 1;
-}
-
 h1,
 h2,
 h3 {
@@ -161,6 +93,7 @@ nav ul li:hover a::after {
     opacity: 1;
 }
 
+/*Footer*/
 footer {
     width: 100%;
     bottom: 0;
@@ -174,7 +107,7 @@ footer {
 }
 
 footer .info {
-    width: 115%;
+    width: 83%;
 }
 
 .row {
@@ -191,14 +124,6 @@ footer .info {
     padding: 10px;
 }
 
-.navlinks {
-    margin-left: 60px;
-}
-
-.link {
-    margin-left: -31px;
-}
-
 .col:nth-child(2) {
     flex-basis: 15%;
 }
@@ -212,7 +137,6 @@ footer .info {
     width: fit-content;
     margin-bottom: 40px;
     position: relative;
-    font-size: 21px;
 }
 
 .email-id {
@@ -224,7 +148,7 @@ footer .info {
 ul li {
     list-style: none;
     margin-bottom: 12px;
-    margin-left: -60px;
+    margin-left: -30px;
 }
 
 ul li a {
@@ -232,7 +156,7 @@ ul li a {
     color: grey;
 }
 
-.footer {
+.footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -240,7 +164,7 @@ ul li a {
     position: relative;
     margin-left: 3px;
     width: 26%;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 .footer .far {
@@ -257,15 +181,15 @@ ul li a {
     outline: none;
     padding: 10px;
     position: relative;
-    margin-top: -3px;
+    margin-top: -10px; 
 }
 
 .input-line {
-    width: 380%;
+    width: 250%;
     height: 2px;
-    background: #ccc;
+    background: #ccc; 
     position: absolute;
-    bottom: -3px;
+    bottom: 0;
     left: 0;
 }
 
@@ -275,11 +199,6 @@ ul li a {
     outline: none;
     cursor: pointer;
     padding: 10px;
-    border-radius: 40%;
-}
-
-.ullinks {
-    margin-left: -10px;
 }
 
 .footer button .fas {
@@ -338,10 +257,10 @@ hr {
 }
 
 @keyframes moving {
-    0% {
+    0%{
         left: -20px;
     }
-    100% {
+    100%{
         left: 100px;
     }
 }
