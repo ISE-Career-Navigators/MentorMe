@@ -1,15 +1,15 @@
 //http-server --cors
 
-let events = []; // Declare the events array globally
-let cardsContainer; // Declare cardsContainer globally
+let events = [];
+let jobs = [];
+let cardsContainerEvents;
+let cardsContainerJobs;
 
-// Execute code when the DOM content is fully loaded
+
 document.addEventListener('DOMContentLoaded', () => {
-    // Get references to HTML elements
-    cardsContainer = document.getElementById('cards');
-    const searchInput = document.getElementById('searchInput');
+    cardsContainerEvents = document.getElementById('cards_events');
+    const searchInputEvents = document.getElementById('searchInput');
 
-    // Fetch event data from the local JSON file
     fetch("http://localhost:3000/events")
         .then(response => {
             if (!response.ok) {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             renderEvents(events);
 
             // Event listener for the search input to filter events
-            searchInput.addEventListener('input', function (event) {
+            searchInputEvents.addEventListener('input', function (event) {
                 const searchTerm = event.target.value.toLowerCase();
                 const filteredEvents = filterEvents(events, searchTerm);
                 renderEvents(filteredEvents);
@@ -33,12 +33,61 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 });
 
-// Function to filter events based on search term
+document.addEventListener('DOMContentLoaded', () => {
+    cardsContainerJobs = document.getElementById('cards_jobs');
+    const searchInputJobs = document.getElementById('searchInput');
+
+    fetch("http://localhost:3000/jobs")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(jobsData => {
+            jobs = jobsData;
+            renderJobs(jobs);
+
+            // Event listener for the search input to filter events
+            searchInputJobs.addEventListener('input', function (job) {
+                const searchTerm = job.target.value.toLowerCase();
+                const filteredJobs = filteredJobs(jobs, searchTerm);
+                renderJobs(filteredJobs);
+            });
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+});
+
+const searchInputEvents = document.getElementById('searchInput');
+searchInputEvents.addEventListener('input', function (event) {
+    const searchTerm = event.target.value.toLowerCase();
+    let filteredEvents = events.filter(event =>
+        event.title.toLowerCase().includes(searchTerm) ||
+        event.company.toLowerCase().includes(searchTerm) ||
+        event.description.toLowerCase().includes(searchTerm)
+    );
+    renderEvents(filteredEvents);
+});
+
+const searchInputJobs = document.getElementById('searchInput');
+searchInputJobs.addEventListener('input', function (event) {
+    const searchTerm = event.target.value.toLowerCase();
+    let filteredJobs = events.filter(job =>
+        job.title.toLowerCase().includes(searchTerm) ||
+        job.job_name.toLowerCase().includes(searchTerm) ||
+        job.company_name.toLowerCase().includes(searchTerm) ||
+        job.description.toLowerCase().includes(searchTerm)
+    );
+    renderJobs(filteredJobs);
+});
+
+
 function filterEvents(eventsToFilter, searchTerm) {
     return eventsToFilter.filter(event =>
         event.title.toLowerCase().includes(searchTerm) ||
-        event.job_name.toLowerCase().includes(searchTerm) ||
-        event.company_name.toLowerCase().includes(searchTerm) ||
+        event.company.toLowerCase().includes(searchTerm) ||
         event.description.toLowerCase().includes(searchTerm) ||
         event.requirements.join(' ').toLowerCase().includes(searchTerm) ||
         event.deadline.toLowerCase().includes(searchTerm) ||
@@ -46,19 +95,44 @@ function filterEvents(eventsToFilter, searchTerm) {
     );
 }
 
-// Function to render event cards based on the provided array of events
+function filterJobs(jobsToFilter, searchTerm) {
+    return jobsToFilter.filter(job =>
+        job.title.toLowerCase().includes(searchTerm) ||
+        job.job_name.toLowerCase().includes(searchTerm) ||
+        job.company_name.toLowerCase().includes(searchTerm) ||
+        job.description.toLowerCase().includes(searchTerm) ||
+        job.requirements.join(' ').toLowerCase().includes(searchTerm) ||
+        job.deadline.toLowerCase().includes(searchTerm)
+    );
+}
+
 function renderEvents(eventsToRender) {
     const data = eventsToRender.map(event => `
         <div class="card">
+        <h3 class="type">Event</h3>
             <h1 class="title">${event.title}</h1>
-            <p class="job-name">${event.job_name} at ${event.company_name}</p>
+            <p class="company">${event.company} 
             <p class="description">${event.description}</p>
-            <p class="requirements"><strong>Requirements:</strong> ${event.requirements.join(', ')}</p>
             <p class="deadline"><strong>Deadline:</strong> ${event.deadline}</p>
-            <p class="dates"><strong>Dates:</strong> ${event.start_date} to ${event.end_date}</p>
             <p class="location"><strong>Location:</strong> ${event.location}</p>
         </div>`
     ).join('');
 
-    cardsContainer.innerHTML = data;
+    cardsContainerEvents.innerHTML = data;
+}
+
+function renderJobs(jobsToRender) {
+    const data = jobsToRender.map(job => `
+        <div class="card">
+        <h3 class="type">Job</h3>
+            <h1 class="title">${job.title}</h1>
+            <p class="job-name">${job.job_name} at ${job.company_name}</p>
+            <p class="description">${job.description}</p>
+            <p class="requirements"><strong>Requirements:</strong> ${job.requirements.join(', ')}</p>
+            <p class="deadline"><strong>Deadline:</strong> ${job.deadline}</p>
+            <p class="dates"><strong>Dates:</strong> ${job.start_date} to ${job.end_date}</p>
+        </div>`
+    ).join('');
+
+    cardsContainerJobs.innerHTML = data;
 }
