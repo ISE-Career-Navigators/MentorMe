@@ -1,7 +1,8 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": 1,      
+      "image": "../assets/images/user.jpg",
       "name": "John Doe",
       "email": "johndoe@example.com",
       "password": "password123",
@@ -48,53 +49,7 @@
     },
     {
       "id": 2,
-      "name": "John Doe",
-      "email": "johndoe@example.com",
-      "password": "password123",
-      "username": "john_doe",
-      "about": "Enthusiastic learner and tech enthusiast.",
-      "interests": [
-        "Technology",
-        "Programming",
-        "AI"
-      ],
-      "occupation": "Software Developer",
-      "card": {
-        "number": "1234567890123456",
-        "cvc": "123",
-        "expirationDate": "12/24"
-      },
-      "sessions": [
-        {
-          "sessionId": 101,
-          "title": "Intro to AI",
-          "date": "2023-01-10"
-        }
-      ],
-      "mPackages": [
-        {
-          "packageId": 201,
-          "mentorId": 1,
-          "resourceLink": "https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/",
-          "price": 100
-        }
-      ],
-      "eventsAttended": [
-        {
-          "eventId": 301,
-          "title": "Tech Conference 2023"
-        }
-      ],
-      "savedJobs": [
-        {
-          "jobId": 401,
-          "title": "Senior Developer"
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "image": "./assets/images/user.jpg",
+      "image": "../assets/images/user.jpg",
       "name": "John Doe",
       "email": "johndoe@example.com",
       "password": "password123",
@@ -141,7 +96,7 @@
     },
     {
       "id": 3,
-      "image": "./assets/images/user.jpg",
+      "image": "../assets/images/user.jpg",
       "name": "John Doe",
       "email": "johndoe@example.com",
       "password": "password123",
@@ -188,53 +143,7 @@
     },
     {
       "id": 4,
-      "image": "./assets/images/user.jpg",
-      "name": "John Doe",
-      "email": "johndoe@example.com",
-      "password": "password123",
-      "username": "john_doe",
-      "about": "Enthusiastic learner and tech enthusiast.",
-      "interests": [
-        "Technology",
-        "Programming",
-        "AI"
-      ],
-      "occupation": "Software Developer",
-      "card": {
-        "number": "1234567890123456",
-        "cvc": "123",
-        "expirationDate": "12/24"
-      },
-      "sessions": [
-        {
-          "sessionId": 101,
-          "title": "Intro to AI",
-          "date": "2023-01-10"
-        }
-      ],
-      "mPackages": [
-        {
-          "packageId": 201,
-          "resourceLink": "https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/",
-          "price": 100
-        }
-      ],
-      "eventsAttended": [
-        {
-          "eventId": 301,
-          "title": "Tech Conference 2023"
-        }
-      ],
-      "savedJobs": [
-        {
-          "jobId": 401,
-          "title": "Senior Developer"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "image": "./assets/images/user.jpg",
+      "image": "../assets/images/user.jpg",
       "name": "John Doe",
       "email": "johndoe@example.com",
       "password": "password123",
@@ -280,8 +189,54 @@
       ]
     },
     {
+      "id": 5,
+      "image": "../assets/images/user.jpg",
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "password": "password123",
+      "username": "john_doe",
+      "about": "Enthusiastic learner and tech enthusiast.",
+      "interests": [
+        "Technology",
+        "Programming",
+        "AI"
+      ],
+      "occupation": "Software Developer",
+      "card": {
+        "number": "1234567890123456",
+        "cvc": "123",
+        "expirationDate": "12/24"
+      },
+      "sessions": [
+        {
+          "sessionId": 101,
+          "title": "Intro to AI",
+          "date": "2023-01-10"
+        }
+      ],
+      "mPackages": [
+        {
+          "packageId": 201,
+          "resourceLink": "https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/",
+          "price": 100
+        }
+      ],
+      "eventsAttended": [
+        {
+          "eventId": 301,
+          "title": "Tech Conference 2023"
+        }
+      ],
+      "savedJobs": [
+        {
+          "jobId": 401,
+          "title": "Senior Developer"
+        }
+      ]
+    },
+    {
       "id": 6,
-      "image": "./assets/images/user.jpg",
+      "image": "../assets/images/user.jpg",
       "name": "John Doe",
       "email": "johndoe@example.com",
       "password": "password123",
@@ -328,7 +283,7 @@
     },
     {
       "id": 7,
-      "image": "./assets/images/user.jpg",
+      "image": "../assets/images/user.jpg",
       "name": "John Doe",
       "email": "johndoe@example.com",
       "password": "password123",
@@ -375,7 +330,54 @@
     },
     {
       "id": 8,
-      "image": "./assets/images/user.jpg",
+      "image": "../assets/images/user.jpg",
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "password": "password123",
+      "username": "john_doe",
+      "about": "Enthusiastic learner and tech enthusiast.",
+      "interests": [
+        "Technology",
+        "Programming",
+        "AI"
+      ],
+      "occupation": "Software Developer",
+      "card": {
+        "number": "1234567890123456",
+        "cvc": "123",
+        "expirationDate": "12/24"
+      },
+      "sessions": [
+        {
+          "sessionId": 101,
+          "title": "Intro to AI",
+          "date": "2023-01-10"
+        }
+      ],
+      "mPackages": [
+        {
+          "packageId": 201,
+          "mentorId": 1,
+          "resourceLink": "https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/",
+          "price": 100
+        }
+      ],
+      "eventsAttended": [
+        {
+          "eventId": 301,
+          "title": "Tech Conference 2023"
+        }
+      ],
+      "savedJobs": [
+        {
+          "jobId": 401,
+          "title": "Senior Developer"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "image": "../assets/images/user.jpg",
       "name": "John Doe",
       "email": "johndoe@example.com",
       "password": "password123",
@@ -430,7 +432,7 @@
       "username": "john_doe",
       "title": "IT Systems Engineer",
       "description": "Experienced in designing, implementing, and maintaining IT systems for optimal performance and efficiency.",
-      "image": "./assets/images/alice_johnson.jpeg",
+      "image": "../assets/images/alice_johnson.jpeg",
       "linkedin": "https://www.linkedin.com/in/alicejohnson",
       "github": "https://github.com/alicejohnson",
       "rating": 4,
@@ -488,7 +490,7 @@
       "username": "john_doe",
       "title": "IT Solutions Architect",
       "description": "Specialized in architecting comprehensive IT solutions to meet business requirements and enhance organizational capabilities.",
-      "image": "./assets/images/bob_anderson.jpeg",
+      "image": "../assets/images/bob_anderson.jpeg",
       "linkedin": "https://www.linkedin.com/in/bobanderson",
       "github": "https://github.com/bobanderson",
       "rating": 4,
@@ -546,7 +548,7 @@
       "username": "john_doe",
       "title": "IT Data Scientist",
       "description": "Data scientist with a focus on IT-related datasets, skilled in extracting valuable insights to drive informed decision-making.",
-      "image": "./assets/images/charlie_martinez.jpg",
+      "image": "../assets/images/charlie_martinez.jpg",
       "linkedin": "https://www.linkedin.com/in/charliemartinez",
       "github": "https://github.com/charliemartinez",
       "rating": 4,
@@ -604,7 +606,7 @@
       "username": "john_doe",
       "title": "IT Frontend Developer",
       "description": "Frontend developer specializing in creating user-friendly and visually appealing IT-related interfaces with cutting-edge technologies.",
-      "image": "./assets/images/diana_white.jpg",
+      "image": "../assets/images/diana_white.jpg",
       "linkedin": "https://www.linkedin.com/in/dianawhite",
       "github": "https://github.com/dianawhite",
       "rating": 4,
@@ -662,7 +664,7 @@
       "username": "john_doe",
       "title": "IT Product Manager",
       "description": "Product manager with a focus on IT product development, experienced in guiding projects from conception to successful deployment.",
-      "image": "./assets/images/ethan_davis.jpg",
+      "image": "../assets/images/ethan_davis.jpg",
       "linkedin": "https://www.linkedin.com/in/ethandavis",
       "github": "https://github.com/ethandavis",
       "rating": 4,
@@ -720,7 +722,7 @@
       "username": "john_doe",
       "title": "IT Security Analyst",
       "description": "Expert in cybersecurity, specializing in analyzing and enhancing the security posture of IT systems and networks.",
-      "image": "./assets/images/fiona_lee.jpeg",
+      "image": "../assets/images/fiona_lee.jpeg",
       "linkedin": "https://www.linkedin.com/in/fionalee",
       "github": "https://github.com/fionalee",
       "rating": 4,
@@ -778,7 +780,7 @@
       "username": "john_doe",
       "title": "IT Cloud Architect",
       "description": "Cloud architect with a focus on designing scalable and reliable IT solutions in cloud environments.",
-      "image": "./assets/images/george_taylor.jpeg",
+      "image": "../assets/images/george_taylor.jpeg",
       "linkedin": "https://www.linkedin.com/in/georgetaylor",
       "github": "https://github.com/georgetaylor",
       "rating": 4,
@@ -836,7 +838,7 @@
       "username": "john_doe",
       "title": "IT UX/UI Designer",
       "description": "Passionate about creating intuitive and visually appealing user experiences for IT applications and websites.",
-      "image": "./assets/images/hannah_parker.jpeg",
+      "image": "../assets/images/hannah_parker.jpeg",
       "linkedin": "https://www.linkedin.com/in/hannahparker",
       "github": "https://github.com/hannahparker",
       "rating": 4,
@@ -894,7 +896,7 @@
       "username": "john_doe",
       "title": "IT DevOps Engineer",
       "description": "DevOps engineer specializing in streamlining IT development and operations processes for improved efficiency and collaboration.",
-      "image": "./assets/images/ian_rodriguez.png",
+      "image": "../assets/images/ian_rodriguez.png",
       "linkedin": "https://www.linkedin.com/in/ianrodriguez",
       "github": "https://github.com/ianrodriguez",
       "rating": 4,
@@ -952,7 +954,7 @@
       "username": "john_doe",
       "title": "IT Mobile App Developer",
       "description": "Mobile app developer with expertise in creating innovative and user-friendly IT applications for iOS and Android platforms.",
-      "image": "./assets/images/jessica_kim.jpeg",
+      "image": "../assets/images/jessica_kim.jpeg",
       "linkedin": "https://www.linkedin.com/in/jessicakim",
       "github": "https://github.com/jessicakim",
       "rating": 4,
@@ -998,7 +1000,7 @@
       ]
     }
   ],
-  "events": [
+  "jobs": [
     {
       "id": 1,
       "title": "Tech Expo 2023",
@@ -1012,8 +1014,7 @@
       ],
       "deadline": "2023-05-01",
       "start_date": "2023-06-15",
-      "end_date": "2023-06-17",
-      "location": "Convention Center, Cityville"
+      "end_date": "2023-06-17"
     },
     {
       "id": 2,
@@ -1028,8 +1029,7 @@
       ],
       "deadline": "2023-04-15",
       "start_date": "2023-07-01",
-      "end_date": "2023-07-03",
-      "location": "Startup Hub, Innovation District"
+      "end_date": "2023-07-03"
     },
     {
       "id": 3,
@@ -1044,8 +1044,7 @@
       ],
       "deadline": "2023-03-20",
       "start_date": "2023-08-10",
-      "end_date": "2023-08-12",
-      "location": "Data Hub, Tech City"
+      "end_date": "2023-08-12"
     },
     {
       "id": 4,
@@ -1060,8 +1059,7 @@
       ],
       "deadline": "2023-04-30",
       "start_date": "2023-09-05",
-      "end_date": "2023-09-07",
-      "location": "Financial Center, Metro Plaza"
+      "end_date": "2023-09-07"
     },
     {
       "id": 5,
@@ -1076,8 +1074,7 @@
       ],
       "deadline": "2023-06-01",
       "start_date": "2023-10-15",
-      "end_date": "2023-10-17",
-      "location": "Medical Center, Health District"
+      "end_date": "2023-10-17"
     },
     {
       "id": 6,
@@ -1092,8 +1089,7 @@
       ],
       "deadline": "2023-07-15",
       "start_date": "2023-11-20",
-      "end_date": "2023-11-22",
-      "location": "Green Convention Center, Eco City"
+      "end_date": "2023-11-22"
     },
     {
       "id": 7,
@@ -1108,8 +1104,7 @@
       ],
       "deadline": "2023-08-01",
       "start_date": "2023-12-05",
-      "end_date": "2023-12-07",
-      "location": "Marketing Hub, Advertiser's Square"
+      "end_date": "2023-12-07"
     },
     {
       "id": 8,
@@ -1124,8 +1119,7 @@
       ],
       "deadline": "2023-09-15",
       "start_date": "2024-01-10",
-      "end_date": "2024-01-12",
-      "location": "SecureTech Center, Cyber City"
+      "end_date": "2024-01-12"
     },
     {
       "id": 9,
@@ -1140,8 +1134,7 @@
       ],
       "deadline": "2023-10-30",
       "start_date": "2024-02-15",
-      "end_date": "2024-02-17",
-      "location": "Education Hub, Learning Campus"
+      "end_date": "2024-02-17"
     },
     {
       "id": 10,
@@ -1156,8 +1149,49 @@
       ],
       "deadline": "2023-12-31",
       "start_date": "2024-03-15",
-      "end_date": "2024-03-17",
-      "location": "AutoTech Center, Innovation Plaza"
+      "end_date": "2024-03-17"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Tech Expo 2023",
+      "company": "Tech Innovations Inc.",
+      "description": "Explore the latest advancements in technology and connect with leading companies in the industry.",
+      "deadline": "2023-05-01",
+      "location": "Convention Center, Cityville"
+    },
+    {
+      "id": 2,
+      "title": "Startup Career Fair",
+      "company": "Innovate Startups LLC",
+      "description": "Explore exciting career opportunities in the startup ecosystem. Connect with founders and learn about the innovative projects shaping the future.",
+      "deadline": "2023-04-15",
+      "location": "Startup Hub, Innovation District"
+    },
+    {
+      "id": 3,
+      "title": "Data Science Summit",
+      "company": "Analytics Solutions Corp.",
+      "description": "Join industry leaders at the Data Science Summit to discuss the latest trends and advancements in data science and analytics.",
+      "deadline": "2023-03-20",
+      "location": "Data Hub, Tech City"
+    },
+    {
+      "id": 4,
+      "title": "Finance Forum 2023",
+      "company": "Global Investments Ltd.",
+      "description": "Explore the latest trends in finance and investment at Finance Forum 2023. Connect with financial experts and industry leaders.",
+      "deadline": "2023-04-30",
+      "location": "Financial Center, Metro Plaza"
+    },
+    {
+      "id": 5,
+      "title": "Healthcare Innovation Summit",
+      "company": "MedTech Innovations Inc.",
+      "description": "Join us at the Healthcare Innovation Summit to explore the latest advancements in healthcare technology and IT solutions.",
+      "deadline": "2023-06-01",
+      "location": "Medical Center, Health District"
     }
   ]
 }

@@ -5,41 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events Hub</title>
-    <link rel="stylesheet" href="assets/css/events.css">
-    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/events.css">
 </head>
-
 <body>
-    <nav>
-        <div class="name">
-            <ul>
-                <li>Events Hub</li>
-            </ul>
+    <!-- Navbar Area Start Here -->
+    <div class="nav-container">
+        <div class="logo">
+            <img src="../assets/images/logo.png">
         </div>
-        <div class="menu">
+        <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../public/mentors.html">Mentors</a></li>
+                <li><a href="../public/events.html">Events</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Account</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../public/user-profile.html">User Profile</a></li>
+                        <li><a href="../public/mentor-profile.html">Member Profile</a></li>
+                        <li><a href="../public/member-login.html">User Login</a></li>
+                        <li><a href="../public/mentor-login.html">Mentor Login</a></li>
+                    </ul>
+                </li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </div>
+    <!-- Navbar Area End Here-->
 
     <h1 class="heading">Events:</h1>
 
-    <!-- Search container -->
+    <!-- Search Container Are Start Here -->
     <div class="search-container">
         <label for="searchInput"></label>
         <input type="text" id="searchInput" placeholder="Search...">
         <button type="submit" id="searchButton" onclick="performSearch()">Search</button>
     </div>
+    <!-- Search Container Area End-->
 
     <div id="cards_events"></div>
     <div id="cards_jobs"></div>
 
-
-    <script src="assets/js/events-script.js"></script>
+    <!-- Footer Area Start Here -->
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="/assets/images/logo.png" class="logo" alt="logo">
+                <p class="info">MentorMe is an IT mentorship marketplace connecting job seekers with mentors. It serves people from diverse backgrounds and special needs in the job marketplace.</p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div></h3>
+                <p>Tabriz Str. 61</p>
+                <p>Baku, Azerbaijan</p>
+                <p class="email-id">mentorme@gmail.com</p>
+                <p>+994 999 99 99</p>
+            </div>
+            <div class="col navlinks">
+                <h3 class="link">Links <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="../home.html" target="_blank">Home</a></li>
+                    <li><a href="../public/mentors.html" target="_blank">Mentors</a></li>
+                    <li><a href="../public/events.html" target="_blank">Events</a></li>
+                    <li><a href="../public/member-login.html" target="_blank">Login</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div></h3>
+                <form class="footer">
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    <div class="input-line"></div>
+                </form>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Mentor Me © 2023 - All Rights Reserved</p>
+    </footer>
+    <!-- Footer Area End Here-->
+    
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/events-script.js"></script>
 </body>
-
 </html>

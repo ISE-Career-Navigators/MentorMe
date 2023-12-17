@@ -35,7 +35,7 @@ label {
     margin-right: 10px;
 }
 
-/* Styling for input and select elements
+/* Styling for input and select elements */
 input,
 select {
     font-size: 16px;
@@ -43,7 +43,7 @@ select {
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-bottom: 10px;
-} */
+}
 
 /* Styling for the cards container */
 #cards {
@@ -57,7 +57,6 @@ select {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Center items horizontally */
     width: 30%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 18px;
@@ -65,9 +64,7 @@ select {
     margin-bottom: 30px;
     border-radius: 8px;
     background-color: #fff;
-    /* Card background color */
     transition: transform 0.3s ease-in-out;
-    /* Smooth card hover effect */
     cursor: pointer;
 }
 
@@ -77,11 +74,8 @@ select {
     height: 250px;
     margin-bottom: 10px;
     border-radius: 50%;
-    /* Make the image circular */
     align-self: center;
-    /* Center the image within the container */
 }
-
 
 /* Hover effect for cards */
 .card:hover {
@@ -114,7 +108,6 @@ select {
 .links {
     font-size: 14px;
     color: #3498db;
-    /* Link color */
 }
 
 /* Hover effect for links */
@@ -123,27 +116,23 @@ select {
 }
 
 /* Styling for the search button */
-/* #searchButton {
+#searchButton {
     background-color: #3498db;
     color: #fff;
-     Button text color 
     border: none;
     padding: 10px 15px;
     margin-left: 10px;
-     Add some spacing between the input and button 
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-     Smooth button hover effect 
-} */
+}
 
 /* Hover effect for the search button */
 #searchButton:hover {
     background-color: #c3b7ea;
 }
 
-
-
+/* Styling for navigation */
 a {
     text-decoration: none;
 }
@@ -195,6 +184,7 @@ nav {
     color: white;
 }
 
+/* Styling for search container */
 input[type="text"] {
     width: 550px;
     font-size: 15px;
@@ -203,6 +193,7 @@ input[type="text"] {
     border-radius: 15px;
 }
 
+/* Styling for search button */
 button[type="submit"] {
     font-size: 14px;
     padding: 10px;
@@ -210,69 +201,183 @@ button[type="submit"] {
     border-radius: 15px;
 }
 
-/* .mentor-work-details {
-    display: flex;
-    gap: 20px;
-    margin-left: 0;
-    margin-bottom: 0;
-} */
-
-/* Styling for mentor details */
-.mentor-details {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
+/* Styling for footer */
+footer {
+    width: 100%;
+    bottom: 0;
+    color: grey;
+    background-color: #e5f5ff;
+    padding: 40px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+    position: relative;
 }
 
-.details-line {
+footer .info {
+    width: 167%;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: space-between;
-    margin-top: 5px;
 }
 
-.detail {
+.col {
+    flex-basis: 13%;
+    padding: 10px;
+}
+
+.navlinks {
+    margin-left: 60px;
+}
+
+.link {
+    margin-left: -31px;
+}
+
+.col:nth-child(2) {
+    flex-basis: 15%;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    font-size: 21px;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+    margin-left: -30px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.footer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    position: relative;
+    margin-left: 3px;
+    width: 26%;
+    margin-top: 50px;
 }
 
-.detail i {
-    margin-right: 3px;
-    margin-left: 10px;
-    color: #4CAF50;
+.footer .far {
+    font-size: 18px;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
-.detail-label {
-    margin-right: 5px;
-    font-size: 14px;
-    color: #333;
+.footer input {
+    flex-grow: 1;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    position: relative;
+    margin-top: 3px;
 }
 
-.detail-value {
-    font-size: 14px;
-    color: #777;
-    text-align: center; /* Center the price */
+.input-line {
+    width: 380%;
+    height: 2px;
+    background: #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
-#price{
-    margin-bottom: 20px;
+.footer button {
+    background: transparent;
+    border: 3px solid #c3b7ea;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
 }
 
-/* Add this style for the "See More" link */
-.links .see-more {
-    display: block;
-    margin-top: 15px;
-    text-align: center;
+.footer button .fas {
     font-size: 16px;
-    border: 1px solid #3498db; /* Border color */
-    padding: 5px 10px; /* Adjust padding as needed */
-    border-radius: 5px; /* Optional: Rounded corners */
-    color: #3498db; /* Text color */
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition */
+    color: #ccc;
 }
 
-/* Hover effect for the "See More" link */
-.links .see-more:hover {
-    background-color: #3498db; /* Background color on hover */
-    color: #fff; /* Text color on hover */
-    text-decoration: none; /* Remove default underline */
+.social-icons {
+    margin-top: -20px;
+}
+
+.social-icons .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+    100% {
+        left: 100px;
+    }
 }
