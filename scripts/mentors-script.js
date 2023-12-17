@@ -1,4 +1,5 @@
 //http-server --cors
+//npx json-server --watch mentors.json
 
 let mentors = []; // Declare the mentors array globally
 let cardsContainer; // Declare cardsContainer globally
@@ -21,6 +22,28 @@ document.addEventListener('DOMContentLoaded', () => {
             mentors = mentorsData; // Update the global mentors variable
             renderMentors(mentors);
 
+            console.log(mentors);
+            const uniqueWorkplaces = []
+            mentors.forEach(mentor => uniqueWorkplaces.push(mentor.workplace));
+            console.log(uniqueWorkplaces);
+
+            // Populate the dropdown with options
+            const categorySelect = document.getElementById('categorySelect');
+            uniqueWorkplaces.forEach(workplace => {
+                const option = document.createElement('option');
+                option.value = workplace.toLowerCase();
+                option.textContent = workplace;
+                categorySelect.appendChild(option);
+            });
+
+            // Event listener for the category select to filter mentors
+            categorySelect.addEventListener('change', function () {
+                const selectedCategory = categorySelect.value;
+                const searchTerm = searchInput.value.toLowerCase();
+                const filteredMentors = filterMentorsDifferent(mentors, searchTerm, selectedCategory);
+                renderMentors(filteredMentors);
+            });
+
             // Event listener for the search input to filter mentors
             searchInput.addEventListener('input', function (event) {
                 const searchTerm = event.target.value.toLowerCase();
@@ -31,48 +54,49 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => {
             console.error('Error:', error);
         });
+
 });
 
-// Function to filter mentors based on search term
-function filterMentors(mentorsToFilter, searchTerm) {
-    return mentorsToFilter.filter(mentor =>
-        mentor.name.toLowerCase().includes(searchTerm) ||
-        mentor.title.toLowerCase().includes(searchTerm) ||
-        mentor.description.toLowerCase().includes(searchTerm)
-    );
-}
-
+// Update the renderMentors function
 function renderMentors(mentorsToRender) {
-    const data = mentorsToRender.map(mentor => `
+    const data = mentorsToRender.map((mentor) => {
+        return `
         <div class="card" onclick="openMentorDetailPage(${mentor.id})">
             <h1 class="title">${mentor.name}</h1>
             <img src="${mentor.image}" alt="${mentor.name}" class="images">
             <p class="title">${mentor.title}</p>
             <div class="mentor-details">
-                <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p class="details">${mentor.location}</p>
-                </div>
-                <div class="workplace">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <p class="details">${mentor.workplace}</p>
-                </div>
-                <div class="price">
-                    <i class="fa-solid fa-money-bill-wave"></i>
-                    <p class="details">${mentor.price}</p>
+                <div class="details-line">
+                    <div class="detail">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h3 class="detail-label"></h3>
+                        <p class="detail-value">${mentor.workplace}</p>
+                    </div>
+                    <div class="detail">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3 class="detail-label"></h3>
+                        <p class="detail-value">${mentor.location}</p>
+                    </div>
                 </div>
             </div>
             ${mentor.description ? `<p class="description">${mentor.description}</p>` : ''}
+            <div class="details-line">
+                    <div class="detail" id="price">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <h3 class="detail-label"></h3>
+                        <p class="detail-value">${mentor.price}</p>
+                    </div>
+                </div>
             <p class="links">
                 <a href="${mentor.linkedin}" target="_blank">LinkedIn</a> |
-                <a href="${mentor.github}" target="_blank">GitHub</a>
+                <a href="${mentor.github}" target="_blank">GitHub</a> |
+                <a href="mentor-info.html?id=${mentor.id}" class="see-more">See More</a> <!-- Updated See More link -->
             </p>
-        </div>`
-    ).join('');
+        </div>`;
+    }).join('');
 
     cardsContainer.innerHTML = data;
 }
-
 
 // Function to open the mentor detail page for a given mentorId
 function openMentorDetailPage(mentorId) {
@@ -83,21 +107,40 @@ function openMentorDetailPage(mentorId) {
 const searchInput = document.getElementById('searchInput');
 const searchButton = document.getElementById('searchButton');
 
-// Event listener for the search button to perform search
-searchButton.addEventListener('click', function () {
-    performSearch();
-});
+// // Event listener for the search button to perform search
+// searchButton.addEventListener('click', function () {
+//     performSearch();
+// });
 
 // Event listener for the search input to filter mentors
 searchInput.addEventListener('input', function (event) {
     const searchTerm = event.target.value.toLowerCase();
-    const filteredMentors = filterMentors(mentors, searchTerm);
+    let filteredMentors = mentors.filter(mentor =>
+        mentor.name.toLowerCase().includes(searchTerm) ||
+        mentor.title.toLowerCase().includes(searchTerm) ||
+        mentor.description.toLowerCase().includes(searchTerm)
+    );
     renderMentors(filteredMentors);
 });
 
-// Function to perform search
-function performSearch() {
-    const searchTerm = searchInput.value.toLowerCase();
-    const filteredMentors = filterMentors(mentors, searchTerm);
-    renderMentors(filteredMentors);
+// // Function to perform search
+// function performSearch() {
+//     const searchTerm = searchInput.value.toLowerCase();
+//     let filteredMentors = mentors.filter(mentor =>
+//         mentor.name.toLowerCase().includes(searchTerm) ||
+//         mentor.title.toLowerCase().includes(searchTerm) ||
+//         mentor.description.toLowerCase().includes(searchTerm)
+//     );
+//     renderMentors(filteredMentors);
+// }
+
+
+function filterMentorsDifferent(mentorsToFilter, searchTerm, selectedCategory) {
+    return mentorsToFilter.filter(mentor =>
+        (selectedCategory === 'all' || mentor.workplace.toLowerCase() === selectedCategory) &&
+        (mentor.name.toLowerCase().includes(searchTerm) ||
+            mentor.title.toLowerCase().includes(searchTerm) ||
+            mentor.description.toLowerCase().includes(searchTerm)
+        )
+    );
 }

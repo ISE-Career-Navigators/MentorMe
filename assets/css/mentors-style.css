@@ -210,35 +210,69 @@ button[type="submit"] {
     border-radius: 15px;
 }
 
-/* ... */
+/* .mentor-work-details {
+    display: flex;
+    gap: 20px;
+    margin-left: 0;
+    margin-bottom: 0;
+} */
 
-/* Styling for mentor details (Workplace, Location, and Price) */
+/* Styling for mentor details */
 .mentor-details {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 10px;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 
-.location,
-.workplace,
-.price {
+.details-line {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.detail {
     display: flex;
     align-items: center;
 }
 
-.fa-location-dot,
-.fa-briefcase,
-.fa-money-bill-wave {
-    color: #3498db;
-    font-size: 18px;
-    margin-right: 5px;
+.detail i {
+    margin-right: 3px;
+    margin-left: 10px;
+    color: #4CAF50;
 }
 
-.details {
+.detail-label {
+    margin-right: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.detail-value {
     font-size: 14px;
     color: #777;
-    margin-bottom: 5px;
+    text-align: center; /* Center the price */
 }
 
-/* ... */
+#price{
+    margin-bottom: 20px;
+}
+
+/* Add this style for the "See More" link */
+.links .see-more {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #3498db; /* Border color */
+    padding: 5px 10px; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: Rounded corners */
+    color: #3498db; /* Text color */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover effect for the "See More" link */
+.links .see-more:hover {
+    background-color: #3498db; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+    text-decoration: none; /* Remove default underline */
+}
