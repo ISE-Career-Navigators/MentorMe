@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Mentor Profile</title>
     <link rel="stylesheet" href="assets/css/mentor-info.css">    
     <link rel="icon" type="image/x-icon" href="./assets/images/logo.png" />
 </head>
-
 <body>
+    <!-- Navbar Area Start Here -->
     <div class="nav-container">
         <div class="logo">
-            <img src="assets/images/logo.png">
+          <img src="assets/images/logo.png">
         </div>
         <nav>
-            <ul>
-                <li><a href="home.html" target="_blank">Home</a></li>
-                <li><a href="mentors.html" target="_blank">Mentors</a></li>
-                <li><a href="events.html" target="_blank">Events</a></li>
-                <li><a href="login.html" target="_blank">Login</a></li>
-            </ul>
+          <ul>
+            <li><a href="home.html" target="_blank">Home</a></li>
+            <li><a href="mentors.html" target="_blank">Mentors</a></li>
+            <li><a href="events.html" target="_blank">Events</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">Account</a>
+              <ul class="dropdown-menu">
+                <li><a href="user-profile.html">User Profile</a></li>
+                <li><a href="mentor-profile.html">Member Profile</a></li>
+                <li><a href="member-login.html">User Login</a></li>
+                <li><a href="mentor-login.html">Mentor Login</a></li>
+              </ul>
+            </li>
+          </ul>
         </nav>
-    </div>
+      </div>
+    <!-- Navbar Area End Here-->
 
+    <!-- Mentor Info Page Start Here -->
     <div class="mentor">
         <div class="mentor-profile-container">
             <div id="mentor-profile">
@@ -95,25 +104,24 @@
             </div>
         </div>
     </div>
+    <!-- Mentor Info Area End Here -->
 
+    <!-- Footer Area Start Here -->
     <footer>
         <div class="row">
             <div class="col">
                 <img src="assets/images/logo.png" class="logo" alt="logo">
-                <p class="info">MentorMe is an IT mentorship marketplace connecting job seekers with mentors. It serves
-                    people from diverse backgrounds and special needs in the job marketplace.</p>
+                <p class="info">MentorMe is an IT mentorship marketplace connecting job seekers with mentors. It serves people from diverse backgrounds and special needs in the job marketplace.</p>
             </div>
             <div class="col">
-                <h3>Office <div class="underline"><span></span></div>
-                </h3>
+                <h3>Office <div class="underline"><span></span></div></h3>
                 <p>Tabriz Str. 61</p>
                 <p>Baku, Azerbaijan</p>
                 <p class="email-id">mentorme@gmail.com</p>
                 <p>+994 999 99 99</p>
             </div>
             <div class="col">
-                <h3>Links <div class="underline"><span></span></div>
-                </h3>
+                <h3>Links <div class="underline"><span></span></div></h3>
                 <ul>
                     <li><a href="home.html" target="_blank">Home</a></li>
                     <li><a href="mentors.html" target="_blank">Mentors</a></li>
@@ -122,8 +130,7 @@
                 </ul>
             </div>
             <div class="col">
-                <h3>Newsletter <div class="underline"><span></span></div>
-                </h3>
+                <h3>Newsletter <div class="underline"><span></span></div></h3>
                 <form class="footer">
                     <i class="far fa-envelope"></i>
                     <input type="email" placeholder="Enter your email" required>
@@ -141,9 +148,9 @@
         <hr>
         <p class="copyright">Mentor Me © 2023 - All Rights Reserved</p>
     </footer>
+    <!-- Footer Area End Here -->
 
-    <script src="./scripts/info-script.js"></script>
+    <script src="assets/js/info-script.js"></script>
     <script src="https://kit.fontawesome.com/8e25129cf2.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
