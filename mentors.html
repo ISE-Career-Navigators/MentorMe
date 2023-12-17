@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentorMe</title>
+    <link rel="stylesheet" href="assets/css/mentors-style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="name">
+            <ul>
+                <li>MentorMe</li>
+            </ul>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="mentors.html">Mentors</a></li>
+                <li><a href="resources">Resources</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <h1 class="heading">Mentors:</h1>
+
+    <div class="filter-container">
+        <label for="categorySelect">Filter by Workplace:</label>
+
+        <select id="categorySelect">
+            <option value="all">All Categories</option>
+        </select>
+    </div>
+
+    <!-- Search container -->
+    <div class="search-container">
+        <label for="searchInput"></label>
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button type="submit" id="searchButton" onclick="performSearch()">Search</button>
+    </div>
+
+
+    <div id="cards"></div>
+
+
+    <script src="scripts/mentors-script.js"></script>
+    <script src="https://kit.fontawesome.com/8e25129cf2.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
