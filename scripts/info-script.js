@@ -3,6 +3,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const mentorId = urlParams.get('mentorId');
 console.log(mentorId);
 
+
 // Function to fetch mentor data
 function loadMentorProfile(mentorId) {
     console.log(mentorId);
@@ -11,6 +12,7 @@ function loadMentorProfile(mentorId) {
         .then(response => response.json())
         .then(mentorData => {
             renderMentorProfile(mentorData);
+            console.log(mentorData);
         })
         .catch(error => console.error('Error fetching mentor data:', error));
 }
